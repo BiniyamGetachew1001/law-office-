@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 30% 96%;
+    --foreground: 30 10% 15%;
+
+    --card: 36 30% 98%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 36 30% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 30 40% 40%;
+    --primary-foreground: 36 30% 98%;
+
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 30 40% 30%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 30 20% 92%;
+    --accent-foreground: 30 40% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 30% 98%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 30 40% 40%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 30 15% 15%;
+    --foreground: 36 30% 90%;
+
+    --card: 30 15% 18%;
+    --card-foreground: 36 30% 90%;
+
+    --popover: 30 15% 18%;
+    --popover-foreground: 36 30% 90%;
+
+    --primary: 30 40% 60%;
+    --primary-foreground: 30 15% 15%;
+
+    --secondary: 30 15% 25%;
+    --secondary-foreground: 36 30% 90%;
+
+    --muted: 30 15% 25%;
+    --muted-foreground: 30 10% 70%;
+
+    --accent: 30 15% 25%;
+    --accent-foreground: 36 30% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 30% 90%;
+
+    --border: 30 15% 30%;
+    --input: 30 15% 30%;
+    --ring: 30 40% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* Background Styles */
+.bg-law-pattern {
+  background-color: #fbf7f2;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D8BF93' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .bg-law-pattern {
+  background-color: #2c2520;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23735639' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-law-gradient {
+  background: linear-gradient(135deg, #e2cfae 0%, #d8bf93 100%);
+}
+
+.dark .bg-law-gradient {
+  background: linear-gradient(135deg, #735639 0%, #8d6c2f 100%);
+}
+
+/* Card Styles */
+.law-card {
+  @apply relative overflow-hidden rounded-2xl bg-white/80 dark:bg-law-brown-900/30 backdrop-blur-sm border border-law-beige-200 dark:border-law-brown-700 shadow-md transition-all duration-300;
+}
+
+.law-card:hover {
+  @apply shadow-lg border-law-beige-300 dark:border-law-brown-600;
+}
+
+.law-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  @apply bg-law-gradient dark:bg-law-gradient-dark;
+}
+
+/* Typography Styles */
+.heading-xl {
+  @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-law-brown-900 dark:text-law-beige-100;
+}
+
+.heading-lg {
+  @apply font-serif text-3xl md:text-4xl font-bold tracking-tight text-law-brown-800 dark:text-law-beige-200;
+}
+
+.heading-md {
+  @apply font-serif text-2xl md:text-3xl font-bold tracking-tight text-law-brown-800 dark:text-law-beige-200;
+}
+
+.heading-sm {
+  @apply font-serif text-xl md:text-2xl font-bold tracking-tight text-law-brown-800 dark:text-law-beige-200;
+}
+
+.body-lg {
+  @apply font-sans text-lg leading-relaxed text-law-brown-700 dark:text-law-beige-300;
+}
+
+.body-md {
+  @apply font-sans text-base leading-relaxed text-law-brown-700 dark:text-law-beige-300;
+}
+
+.body-sm {
+  @apply font-sans text-sm leading-relaxed text-law-brown-600 dark:text-law-beige-400;
+}
+
+/* Button Styles */
+.btn-law {
+  @apply px-6 py-3 rounded-full bg-law-beige-500 text-law-brown-900 font-medium transition-all duration-300 hover:bg-law-beige-600 focus:ring-2 focus:ring-law-beige-400 focus:ring-offset-2 dark:bg-law-brown-700 dark:text-law-beige-100 dark:hover:bg-law-brown-600 dark:focus:ring-law-brown-500;
+}
+
+.btn-law-outline {
+  @apply px-6 py-3 rounded-full bg-transparent border-2 border-law-beige-500 text-law-brown-900 font-medium transition-all duration-300 hover:bg-law-beige-500/10 focus:ring-2 focus:ring-law-beige-400 focus:ring-offset-2 dark:border-law-brown-700 dark:text-law-beige-100 dark:hover:bg-law-brown-700/20 dark:focus:ring-law-brown-500;
+}
+
+/* Animation Styles */
+.fade-in {
+  @apply opacity-0 animate-fade-in;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-all duration-300;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Divider Styles */
+.divider {
+  @apply h-px w-full bg-gradient-to-r from-transparent via-law-beige-300 dark:via-law-brown-700 to-transparent my-8;
+}
+
+/* Badge Styles */
+.badge-law {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-law-beige-200 text-law-brown-800 dark:bg-law-brown-800 dark:text-law-beige-200;
+}
+
+/* Image Overlay Styles */
+.img-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-law-brown-900/70 to-transparent;
+}
+
+/* Section Styles */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* Responsive Grid */
+.law-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Overlay Gradient */
+.overlay-gradient {
+  @apply absolute inset-0 bg-gradient-to-r from-law-brown-900/60 to-law-brown-900/30;
+}
