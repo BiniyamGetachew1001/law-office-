@@ -19,6 +19,7 @@ import {
 } from "lucide-react"
 import AttorneyProfile from "@/components/attorney-profile"
 import TimelineItem from "@/components/timeline-item"
+import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
   title: "About Us | Prestige Law",
@@ -31,7 +32,14 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-20"></div>
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center opacity-30 dark:opacity-20"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.aboutHero}
+            alt="Ethiopian-themed background"
+            fill
+            className="object-cover opacity-30 dark:opacity-20"
+          />
+        </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">About Prestige Law</h1>
@@ -101,8 +109,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=400"
-                alt="Prestige Law Office Building"
+                src={ethiopianImages.justiceMinistry}
+                alt="Ethiopian Ministry of Justice"
                 fill
                 className="object-cover"
               />
@@ -225,7 +233,7 @@ export default function AboutPage() {
                 <AttorneyProfile
                   name="James Harrington"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney1}
                   specialties={["Corporate Law", "Mergers & Acquisitions"]}
                   education={["J.D., Harvard Law School", "B.A., Yale University"]}
                   bio="James has over 35 years of experience in corporate law and has led some of the firm's most significant M&A transactions. He is recognized as a leading authority in corporate governance and securities regulation."
@@ -236,7 +244,7 @@ export default function AboutPage() {
                 <AttorneyProfile
                   name="Elizabeth Chen"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney2}
                   specialties={["Real Estate Law", "Commercial Transactions"]}
                   education={["J.D., Columbia Law School", "B.S., University of Pennsylvania"]}
                   bio="Elizabeth specializes in complex real estate transactions and development projects. Her expertise in navigating regulatory challenges has made her a trusted advisor to major developers and investors."
@@ -419,8 +427,8 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=400"
-                alt="Attorneys in meeting with clients"
+                src={ethiopianImages.clientMeeting}
+                alt="Ethiopian lawyer with client"
                 fill
                 className="object-cover"
               />
@@ -504,8 +512,8 @@ export default function AboutPage() {
             <Card className="law-card hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Pro Bono Services"
+                  src={ethiopianImages.proBono}
+                  alt="Ethiopian legal aid"
                   fill
                   className="object-cover"
                 />
@@ -529,8 +537,8 @@ export default function AboutPage() {
             <Card className="law-card hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Community Partnerships"
+                  src={ethiopianImages.communityService}
+                  alt="Ethiopian community outreach"
                   fill
                   className="object-cover"
                 />
@@ -554,8 +562,8 @@ export default function AboutPage() {
             <Card className="law-card hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Legal Education Initiatives"
+                  src={ethiopianImages.legalEducation}
+                  alt="Ethiopian legal workshop"
                   fill
                   className="object-cover"
                 />
@@ -589,7 +597,14 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="section-padding relative">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.heroBackground}
+            alt="Ethiopian-themed background"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">

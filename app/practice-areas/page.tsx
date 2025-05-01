@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Search } from "lucide-react"
 import PracticeAreaCard from "@/components/practice-area-card"
 import DynamicBackground from "@/components/dynamic-background"
+import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
   title: "Practice Areas | Prestige Law",
