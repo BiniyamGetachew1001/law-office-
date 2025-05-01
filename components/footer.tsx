@@ -9,10 +9,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Scale className="h-6 w-6 text-law-brown-800 dark:text-law-beige-300" />
-              <h3 className="text-xl font-serif font-bold text-law-brown-900 dark:text-law-beige-100">PRESTIGE LAW</h3>
+              <h3 className="text-xl font-serif font-bold text-law-brown-900 dark:text-law-beige-100">FIKER GETACHEW & ASSOCIATES</h3>
             </div>
             <p className="text-law-brown-700 dark:text-law-beige-300 mb-4">
-              Providing expert legal services with a commitment to excellence and client satisfaction since 1985.
+              Ethiopia's best law office with diversified areas of expertise, providing quality legal services with creative solutions. Our expertise ranges from local Ethiopian law to international law.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -163,18 +163,27 @@ export default function Footer() {
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0" />
                 <span className="text-law-brown-700 dark:text-law-beige-300">
-                  123 Legal Avenue, Suite 500
+                  Bole Road, Friendship Building, 5th Floor
                   <br />
-                  New York, NY 10001
+                  Addis Ababa, Ethiopia
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0" />
-                <span className="text-law-brown-700 dark:text-law-beige-300">(212) 555-1234</span>
+                <span className="text-law-brown-700 dark:text-law-beige-300">+251 911 992 719</span>
+              </li>
+              <li className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M13.5 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M9 13.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5Z" />
+                </svg>
+                <span className="text-law-brown-700 dark:text-law-beige-300">WhatsApp: +251 911 992 719</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0" />
-                <span className="text-law-brown-700 dark:text-law-beige-300">info@prestigelaw.com</span>
+                <span className="text-law-brown-700 dark:text-law-beige-300">info@fgalawoffice.com</span>
               </li>
             </ul>
           </div>
@@ -182,7 +191,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-law-beige-200 dark:border-law-brown-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-law-brown-600 dark:text-law-beige-400">
-              &copy; {new Date().getFullYear()} Prestige Law. All rights reserved.
+              &copy; {new Date().getFullYear()} Fiker Getachew And Associates Law Office (FGA). All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link

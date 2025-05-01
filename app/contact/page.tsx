@@ -50,27 +50,27 @@ const formSchema = z.object({
 const officeLocations = [
   {
     id: 1,
-    name: "Main Office",
-    address: "123 Legal Avenue, Suite 500, New York, NY 10001",
-    phone: "(212) 555-1000",
-    email: "info@prestigelaw.com",
+    name: "Addis Ababa Main Office",
+    address: "Bole Road, Friendship Building, 5th Floor, Addis Ababa, Ethiopia",
+    phone: "+251 911 992 719",
+    email: "info@fgalawoffice.com",
     hours: "Monday - Friday: 8:00 AM - 6:00 PM",
   },
   {
     id: 2,
-    name: "Downtown Branch",
-    address: "456 Justice Street, 10th Floor, New York, NY 10007",
-    phone: "(212) 555-2000",
-    email: "downtown@prestigelaw.com",
-    hours: "Monday - Friday: 9:00 AM - 5:00 PM",
+    name: "WhatsApp",
+    address: "Available for virtual consultations",
+    phone: "+251 911 992 719",
+    email: "info@fgalawoffice.com",
+    hours: "Monday - Sunday: 8:00 AM - 8:00 PM",
   },
   {
     id: 3,
-    name: "Westside Location",
-    address: "789 Counsel Boulevard, Suite 300, New York, NY 10023",
-    phone: "(212) 555-3000",
-    email: "westside@prestigelaw.com",
-    hours: "Monday - Friday: 8:30 AM - 5:30 PM",
+    name: "International Clients",
+    address: "Virtual consultations available for international clients",
+    phone: "+251 911 992 719",
+    email: "international@fgalawoffice.com",
+    hours: "By appointment",
   },
 ]
 
@@ -117,10 +117,10 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center opacity-20 dark:opacity-10"></div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">Contact Us</h1>
+            <h1 className="heading-xl mb-6">Contact Fiker Getachew And Associates</h1>
             <p className="body-lg">
-              Our team of experienced attorneys is ready to help you navigate your legal challenges.
-              Reach out today to schedule a consultation or discuss your legal needs.
+              FGA is the best law office in Ethiopia with diversified areas of expertise. We provide quality legal services with creative solutions.
+              Reach out today to schedule a consultation or discuss your legal needs with our experienced team.
             </p>
           </div>
         </div>
@@ -135,12 +135,12 @@ export default function ContactPage() {
               <h2 className="heading-lg mb-4">How Can We Help You?</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                Whether you're facing a complex legal challenge or simply need guidance on a legal matter,
+                Whether you're facing a complex legal challenge in Ethiopia or simply need guidance on a legal matter,
                 our team is here to help. Fill out the form below, and one of our attorneys will get back to you
-                promptly to discuss your needs.
+                promptly to discuss your needs and provide quality legal services with creative solutions.
               </p>
               <p className="body-md mb-8">
-                For immediate assistance, you can also call our main office at <a href="tel:(212) 555-1000" className="text-law-beige-500 dark:text-law-brown-500 font-medium">(212) 555-1000</a>.
+                For immediate assistance, you can also call or WhatsApp us at <a href="tel:+251911992719" className="text-law-beige-500 dark:text-law-brown-500 font-medium">+251 911 992 719</a>.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -406,7 +406,7 @@ export default function ContactPage() {
             <span className="badge-law mb-2 inline-block">Questions?</span>
             <h2 className="heading-lg mb-4">Frequently Asked Questions</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Find answers to common questions about contacting our firm and scheduling consultations.
+              Find answers to common questions about contacting Fiker Getachew And Associates Law Office and scheduling consultations.
             </p>
           </div>
 
@@ -414,7 +414,7 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h3 className="heading-sm mb-2">How quickly will I hear back after contacting you?</h3>
               <p className="body-md">
-                We strive to respond to all inquiries within 24 hours during business days. For urgent matters, please call our main office directly.
+                We strive to respond to all inquiries within 24 hours during business days. For urgent matters, please call or WhatsApp us directly at +251 911 992 719.
               </p>
             </div>
             <div className="space-y-2">
@@ -424,15 +424,15 @@ export default function ContactPage() {
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="heading-sm mb-2">Can I schedule a virtual consultation?</h3>
+              <h3 className="heading-sm mb-2">Can I schedule a virtual consultation from outside Ethiopia?</h3>
               <p className="body-md">
-                Absolutely. We offer consultations via phone or video conference for clients who prefer not to visit our offices in person.
+                Absolutely. We offer consultations via phone, WhatsApp, or video conference for international clients or those who prefer not to visit our office in person. Our diversified expertise includes international law matters.
               </p>
             </div>
             <div className="space-y-2">
               <h3 className="heading-sm mb-2">What information should I prepare for my consultation?</h3>
               <p className="body-md">
-                It's helpful to have a summary of your legal issue, any relevant documents, and specific questions you'd like to discuss. This allows us to make the most of our time together.
+                It's helpful to have a summary of your legal issue, any relevant documents, and specific questions you'd like to discuss. This allows us to provide quality legal services with creative solutions tailored to your specific needs.
               </p>
             </div>
           </div>
@@ -445,19 +445,25 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-6 text-white">Ready to Get Started?</h2>
+            <h2 className="heading-lg mb-6 text-white">Ready to Get Started with Ethiopia's Best Law Office?</h2>
             <p className="body-lg mb-8 text-law-beige-100">
-              Our team of experienced attorneys is ready to help you navigate your legal challenges and achieve your
-              goals. Take the first step toward resolving your legal matters by scheduling a consultation.
+              Fiker Getachew And Associates Law Office (FGA) is ready to help you with our diversified areas of expertise.
+              We provide quality legal services with creative solutions for all your legal needs in Ethiopia.
+              Take the first step by contacting us today.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="btn-law bg-white text-law-brown-900 hover:bg-law-beige-100 dark:bg-law-beige-100 dark:text-law-brown-900 dark:hover:bg-law-beige-200">
                 <Phone className="mr-2 h-4 w-4" />
-                Call (212) 555-1000
+                Call +251 911 992 719
               </Button>
               <Button className="btn-law-outline border-white text-white hover:bg-white/10 dark:border-law-beige-100 dark:text-law-beige-100 dark:hover:bg-law-beige-100/10">
-                <Mail className="mr-2 h-4 w-4" />
-                Email Us
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 h-4 w-4">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M13.5 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M9 13.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5Z" />
+                </svg>
+                WhatsApp Us
               </Button>
             </div>
           </div>

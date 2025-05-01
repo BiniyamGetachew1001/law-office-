@@ -17,25 +17,25 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    default: "Prestige Law | Expert Legal Services",
-    template: "%s | Prestige Law",
+    default: "Fiker Getachew And Associates Law Office | Premier Ethiopian Legal Services",
+    template: "%s | Fiker Getachew And Associates Law Office",
   },
-  description: "Providing expert legal services with a commitment to excellence and client satisfaction.",
-  keywords: ["law firm", "legal services", "attorneys", "lawyers", "legal consultation"],
-  authors: [{ name: "Prestige Law" }],
-  creator: "Prestige Law",
+  description: "Ethiopia's leading law firm providing quality legal services with creative solutions, with expertise ranging from local Ethiopian law to international law.",
+  keywords: ["Ethiopian law firm", "legal services in Ethiopia", "Ethiopian attorneys", "Addis Ababa lawyers", "Ethiopian legal consultation", "FGA Law Office"],
+  authors: [{ name: "Fiker Getachew And Associates Law Office" }],
+  creator: "Fiker Getachew And Associates Law Office",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://prestigelaw.com",
-    title: "Prestige Law | Expert Legal Services",
-    description: "Providing expert legal services with a commitment to excellence and client satisfaction.",
-    siteName: "Prestige Law",
+    url: "https://fgalawoffice.com",
+    title: "Fiker Getachew And Associates Law Office | Premier Ethiopian Legal Services",
+    description: "Ethiopia's leading law firm providing quality legal services with creative solutions, with expertise ranging from local Ethiopian law to international law.",
+    siteName: "Fiker Getachew And Associates Law Office",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prestige Law | Expert Legal Services",
-    description: "Providing expert legal services with a commitment to excellence and client satisfaction.",
+    title: "Fiker Getachew And Associates Law Office | Premier Ethiopian Legal Services",
+    description: "Ethiopia's leading law firm providing quality legal services with creative solutions, with expertise ranging from local Ethiopian law to international law.",
   },
     generator: 'v0.dev'
 }

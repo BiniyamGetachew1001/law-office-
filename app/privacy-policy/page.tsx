@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata = {
-  title: "Privacy Policy | Prestige Law",
-  description: "Learn about how Prestige Law collects, uses, and protects your personal information.",
+  title: "Privacy Policy | Fiker Getachew And Associates Law Office",
+  description: "Learn about how Fiker Getachew And Associates Law Office (FGA) collects, uses, and protects your personal information in accordance with Ethiopian law.",
 }
 
 export default function PrivacyPolicyPage() {
@@ -24,9 +24,9 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="heading-md mt-8 mb-4">1. Introduction</h2>
           <p className="body-md mb-4">
-            At Prestige Law ("we," "our," or "us"), we respect your privacy and are committed to protecting your
-            personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your
-            information when you visit our website or use our services.
+            At Fiker Getachew And Associates Law Office ("FGA," "we," "our," or "us"), we respect your privacy and are committed to protecting your
+            personal information in accordance with Ethiopian data protection standards. This Privacy Policy explains how we collect, use, disclose, and safeguard your
+            information when you visit our website or use our legal services in Ethiopia.
           </p>
           <p className="body-md mb-4">
             Please read this Privacy Policy carefully. By accessing or using our website or services, you acknowledge
@@ -162,15 +162,15 @@ export default function PrivacyPolicyPage() {
           </p>
           <div className="bg-law-beige-100 dark:bg-law-brown-800/50 p-6 rounded-lg mb-8">
             <p className="body-md mb-2">
-              <strong>Prestige Law</strong>
+              <strong>Warm Law Firm</strong>
             </p>
-            <p className="body-md mb-2">123 Legal Avenue, Suite 500</p>
-            <p className="body-md mb-2">New York, NY 10001</p>
+            <p className="body-md mb-2">Bole Road, Friendship Building, 5th Floor</p>
+            <p className="body-md mb-2">Addis Ababa, Ethiopia</p>
             <p className="body-md mb-2">
-              <strong>Email:</strong> privacy@prestigelaw.com
+              <strong>Email:</strong> privacy@warmlawfirm.com
             </p>
             <p className="body-md">
-              <strong>Phone:</strong> (212) 555-1234
+              <strong>Phone:</strong> +251 11 551 7777
             </p>
           </div>
         </div>

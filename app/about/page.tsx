@@ -22,8 +22,8 @@ import TimelineItem from "@/components/timeline-item"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
-  title: "About Us | Prestige Law",
-  description: "Learn about our law firm's history, mission, values, and meet our experienced attorneys.",
+  title: "About Us | Fiker Getachew And Associates Law Office",
+  description: "Learn about FGA, Ethiopia's best law office with diversified areas of expertise, providing quality legal services with creative solutions.",
 }
 
 export default function AboutPage() {
@@ -42,10 +42,10 @@ export default function AboutPage() {
         </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">About Prestige Law</h1>
+            <h1 className="heading-xl mb-6">About Fiker Getachew And Associates</h1>
             <p className="body-lg">
-              A tradition of legal excellence since 1985, committed to providing exceptional representation and
-              personalized service.
+              Ethiopia's best law office with diversified areas of expertise, providing quality legal services with creative solutions.
+              Our expertise ranges from local Ethiopian law to international law.
             </p>
           </div>
         </div>
@@ -57,25 +57,25 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="badge-law mb-2 inline-block">Our Mission</span>
-              <h2 className="heading-lg mb-4">Committed to Excellence</h2>
+              <h2 className="heading-lg mb-4">Committed to Quality Legal Services</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Prestige Law, our mission is to provide exceptional legal representation while maintaining the
-                highest standards of integrity, professionalism, and client service. We are dedicated to understanding
-                each client's unique needs and delivering tailored solutions that achieve their objectives.
+                At Fiker Getachew And Associates Law Office (FGA), our mission is to provide quality legal services with creative solutions
+                within Ethiopia's unique legal landscape while maintaining the highest standards of integrity, professionalism, and client service.
+                We are dedicated to understanding each client's unique needs and delivering tailored solutions.
               </p>
               <p className="body-md mb-6">
-                We believe that effective legal representation requires not only expertise in the law but also a deep
-                understanding of our clients' industries, challenges, and goals. This client-centered approach has been
-                the cornerstone of our practice since our founding.
+                We believe that effective legal representation in Ethiopia requires not only expertise in Ethiopian law but also a deep
+                understanding of international legal principles. Our diversified areas of expertise allow us to provide comprehensive legal services
+                for all your needs, from litigation to business formation and beyond.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <Card className="law-card">
                   <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Excellence</h3>
+                    <h3 className="heading-sm mb-2">Quality Service</h3>
                     <p className="body-sm">
-                      We strive for excellence in every aspect of our practice, from legal analysis to client
-                      communication.
+                      We strive for excellence in every aspect of our practice, providing quality legal services with creative solutions
+                      that respect Ethiopian cultural contexts.
                     </p>
                   </CardContent>
                 </Card>
@@ -89,10 +89,10 @@ export default function AboutPage() {
                 </Card>
                 <Card className="law-card">
                   <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Innovation</h3>
+                    <h3 className="heading-sm mb-2">Creative Solutions</h3>
                     <p className="body-sm">
-                      We embrace innovative approaches to legal challenges, finding creative solutions for complex
-                      issues.
+                      We embrace innovative approaches to legal challenges within Ethiopia's evolving legal system, finding creative solutions for complex
+                      issues that respect both Ethiopian and international legal principles.
                     </p>
                   </CardContent>
                 </Card>
@@ -124,10 +124,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="text-center mb-12">
             <span className="badge-law mb-2 inline-block">Our History</span>
-            <h2 className="heading-lg mb-4">A Legacy of Legal Excellence</h2>
+            <h2 className="heading-lg mb-4">Ethiopia's Best Law Office</h2>
             <p className="body-md max-w-2xl mx-auto">
-              For over three decades, Prestige Law has grown from a small practice to one of the region's most respected
-              law firms.
+              Fiker Getachew And Associates Law Office (FGA) has established itself as the best law office in Ethiopia with diversified areas of expertise,
+              serving clients throughout the country and internationally with quality legal services and creative solutions.
             </p>
           </div>
 
@@ -138,54 +138,54 @@ export default function AboutPage() {
             {/* Timeline Items */}
             <div className="space-y-16">
               <TimelineItem
-                year="1985"
-                title="Founding of Prestige Law"
-                description="Established by James Harrington and Elizabeth Chen with a focus on corporate and real estate law."
+                year="2015"
+                title="Founding of Fiker Getachew And Associates"
+                description="Established in Addis Ababa by Fiker Getachew with a focus on providing quality legal services with creative solutions across diversified areas of expertise."
                 icon={<Scale className="h-6 w-6" />}
               />
 
               <TimelineItem
-                year="1992"
+                year="2017"
                 title="Expansion of Practice Areas"
-                description="Added litigation and intellectual property departments to meet growing client needs."
+                description="Added specialized departments for intellectual property, immigration, and tax issues to meet growing client needs in Ethiopia's developing economy."
                 icon={<Briefcase className="h-6 w-6" />}
                 position="right"
               />
 
               <TimelineItem
-                year="1998"
+                year="2019"
                 title="New Headquarters"
-                description="Moved to our current location in the heart of the financial district to accommodate our growing team."
+                description="Moved to our current location on Bole Road in the heart of Addis Ababa's business district to accommodate our growing team of specialized attorneys."
                 icon={<MapPin className="h-6 w-6" />}
               />
 
               <TimelineItem
-                year="2005"
-                title="International Expansion"
-                description="Opened our first international office to better serve clients with global operations."
+                year="2020"
+                title="International Partnerships"
+                description="Established partnerships with international law firms to better serve clients with cross-border legal needs and expand our expertise in international law."
                 icon={<Users className="h-6 w-6" />}
                 position="right"
               />
 
               <TimelineItem
-                year="2012"
-                title="Technology Practice Launch"
-                description="Established a dedicated technology practice to address emerging legal challenges in the digital age."
+                year="2021"
+                title="Digital Transformation"
+                description="Implemented digital solutions to enhance client service delivery and address emerging legal challenges in Ethiopia's growing tech sector."
                 icon={<BookOpen className="h-6 w-6" />}
               />
 
               <TimelineItem
-                year="2018"
-                title="Pro Bono Initiative"
-                description="Launched a formal pro bono program, committing to dedicate 5% of our practice to serving underrepresented communities."
+                year="2022"
+                title="Community Legal Aid Program"
+                description="Launched a formal community legal aid program, committing to provide quality legal services with creative solutions to underrepresented communities throughout Ethiopia."
                 icon={<Heart className="h-6 w-6" />}
                 position="right"
               />
 
               <TimelineItem
                 year="2023"
-                title="Innovation Center"
-                description="Established our Legal Innovation Center to develop technology-driven solutions for legal service delivery."
+                title="Expansion of Service Areas"
+                description="Added specialized services in energy law, PPP procurement, and information technology to further diversify our areas of expertise and provide comprehensive legal solutions."
                 icon={<Award className="h-6 w-6" />}
               />
             </div>
@@ -197,10 +197,10 @@ export default function AboutPage() {
       <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
         <div className="container">
           <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Our Team</span>
+            <span className="badge-law mb-2 inline-block">Our Legal Team</span>
             <h2 className="heading-lg mb-4">Meet Our Attorneys</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Our team of experienced attorneys brings together diverse expertise and a shared commitment to excellence.
+              Our team of experienced attorneys brings together diverse expertise in Ethiopian and international law, providing quality legal services with creative solutions.
             </p>
           </div>
 
@@ -231,36 +231,36 @@ export default function AboutPage() {
             <TabsContent value="partners" className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <AttorneyProfile
-                  name="James Harrington"
+                  name="Fiker Getachew"
                   title="Founding Partner"
                   image={ethiopianImages.attorney1}
-                  specialties={["Corporate Law", "Mergers & Acquisitions"]}
-                  education={["J.D., Harvard Law School", "B.A., Yale University"]}
-                  bio="James has over 35 years of experience in corporate law and has led some of the firm's most significant M&A transactions. He is recognized as a leading authority in corporate governance and securities regulation."
-                  email="j.harrington@prestigelaw.com"
-                  phone="(212) 555-1001"
+                  specialties={["Corporate & Business Law", "Litigation & Representation", "Property Rights"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., Harvard Law School"]}
+                  bio="Fiker Getachew is the founder of FGA Law Office, with extensive experience in Ethiopian and international law. She is recognized for providing quality legal services with creative solutions across diversified areas of expertise."
+                  email="fiker@fgalawoffice.com"
+                  phone="+251 911 992 719"
                 />
 
                 <AttorneyProfile
-                  name="Elizabeth Chen"
-                  title="Founding Partner"
+                  name="Abebe Kebede"
+                  title="Senior Partner"
                   image={ethiopianImages.attorney2}
-                  specialties={["Real Estate Law", "Commercial Transactions"]}
-                  education={["J.D., Columbia Law School", "B.S., University of Pennsylvania"]}
-                  bio="Elizabeth specializes in complex real estate transactions and development projects. Her expertise in navigating regulatory challenges has made her a trusted advisor to major developers and investors."
-                  email="e.chen@prestigelaw.com"
-                  phone="(212) 555-1002"
+                  specialties={["Property Rights", "Investment & Licensing", "PPP Procurement"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., Oxford University"]}
+                  bio="Abebe specializes in complex property transactions and investment matters. His expertise in navigating Ethiopia's unique land lease system and procurement regulations has made him a trusted advisor to major developers and investors."
+                  email="abebe@fgalawoffice.com"
+                  phone="+251 911 992 719"
                 />
 
                 <AttorneyProfile
-                  name="Michael Rodriguez"
-                  title="Managing Partner"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Litigation", "Dispute Resolution"]}
-                  education={["J.D., Stanford Law School", "B.A., University of California, Berkeley"]}
-                  bio="Michael leads our litigation practice and has successfully represented clients in high-stakes disputes across various industries. His strategic approach to litigation has resulted in numerous favorable outcomes."
-                  email="m.rodriguez@prestigelaw.com"
-                  phone="(212) 555-1003"
+                  name="Tigist Haile"
+                  title="Senior Associate"
+                  image={ethiopianImages.attorney3}
+                  specialties={["Litigation & Representation", "Family Law", "Criminal Cases"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., University of Cape Town"]}
+                  bio="Tigist leads our litigation practice and has successfully represented clients in high-stakes disputes before Ethiopian federal and regional courts. Her strategic approach and creative solutions have resulted in numerous favorable outcomes."
+                  email="tigist@fgalawoffice.com"
+                  phone="+251 911 992 719"
                 />
 
                 <AttorneyProfile
@@ -438,14 +438,14 @@ export default function AboutPage() {
               <h2 className="heading-lg mb-4">Our Commitment to You</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Prestige Law, we believe that exceptional legal representation begins with understanding our clients'
-                needs, objectives, and concerns. We are committed to providing personalized attention and responsive
-                service throughout every stage of your legal matter.
+                At Fiker Getachew And Associates Law Office (FGA), we believe that exceptional legal representation begins with understanding our clients'
+                needs, objectives, and concerns within the context of Ethiopia's unique legal and business environment. We are committed to providing quality legal services with creative solutions
+                throughout every stage of your legal matter.
               </p>
               <p className="body-md mb-6">
                 Our client-centered approach means that we take the time to listen, explain complex legal concepts in
                 clear terms, and keep you informed about developments in your case. We believe in building long-term
-                relationships based on trust, transparency, and results.
+                relationships based on trust, transparency, and results that respect Ethiopian cultural values while providing diversified legal expertise.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">

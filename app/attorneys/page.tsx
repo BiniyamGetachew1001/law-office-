@@ -11,8 +11,8 @@ import DynamicBackground from "@/components/dynamic-background"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
-  title: "Our Attorneys | Prestige Law",
-  description: "Meet our experienced team of attorneys dedicated to providing exceptional legal representation.",
+  title: "Our Ethiopian Attorneys | Warm Law Firm",
+  description: "Meet our experienced team of Ethiopian attorneys dedicated to providing exceptional legal representation throughout Ethiopia.",
 }
 
 export default function AttorneysPage() {
@@ -31,10 +31,10 @@ export default function AttorneysPage() {
         </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">Our Attorneys</h1>
+            <h1 className="heading-xl mb-6">Our Ethiopian Attorneys</h1>
             <p className="body-lg">
-              Meet our team of experienced attorneys dedicated to providing exceptional legal representation and
-              personalized service across a wide range of practice areas.
+              Meet our team of experienced Ethiopian attorneys dedicated to providing exceptional legal representation and
+              personalized service across a wide range of practice areas throughout Ethiopia.
             </p>
           </div>
         </div>
@@ -144,63 +144,63 @@ export default function AttorneysPage() {
             <TabsContent value="all" className="mt-0">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <AttorneyCard
-                  name="James Harrington"
+                  name="Haile Selassie"
                   title="Founding Partner"
                   image={ethiopianImages.attorney1}
-                  specialties={["Corporate Law", "Mergers & Acquisitions"]}
-                  education={["J.D., Harvard Law School", "B.A., Yale University"]}
-                  bio="James has over 35 years of experience in corporate law and has led some of the firm's most significant M&A transactions. He is recognized as a leading authority in corporate governance and securities regulation."
-                  email="j.harrington@prestigelaw.com"
-                  phone="(212) 555-1001"
-                  linkedin="https://www.linkedin.com/in/jamesharrington"
+                  specialties={["Ethiopian Corporate Law", "International Business Transactions"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., Harvard Law School"]}
+                  bio="Haile has over 20 years of experience in Ethiopian corporate law and has led some of the firm's most significant transactions. He is recognized as a leading authority in Ethiopian corporate governance and commercial regulations."
+                  email="h.selassie@warmlawfirm.com"
+                  phone="+251 11 551 7001"
+                  linkedin="https://www.linkedin.com/in/haileselassie"
                 />
 
                 <AttorneyCard
-                  name="Elizabeth Chen"
+                  name="Makeda Abebe"
                   title="Founding Partner"
                   image={ethiopianImages.attorney2}
-                  specialties={["Real Estate Law", "Commercial Transactions"]}
-                  education={["J.D., Columbia Law School", "B.S., University of Pennsylvania"]}
-                  bio="Elizabeth specializes in complex real estate transactions and development projects. Her expertise in navigating regulatory challenges has made her a trusted advisor to major developers and investors."
-                  email="e.chen@prestigelaw.com"
-                  phone="(212) 555-1002"
-                  linkedin="https://www.linkedin.com/in/elizabethchen"
+                  specialties={["Ethiopian Real Estate Law", "Land Lease Regulations"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., Oxford University"]}
+                  bio="Makeda specializes in complex Ethiopian real estate transactions and development projects. Her expertise in navigating Ethiopia's unique land lease system has made her a trusted advisor to major developers and investors throughout Ethiopia."
+                  email="m.abebe@warmlawfirm.com"
+                  phone="+251 11 551 7002"
+                  linkedin="https://www.linkedin.com/in/makedaabebe"
                 />
 
                 <AttorneyCard
-                  name="Michael Rodriguez"
+                  name="Dawit Bekele"
                   title="Managing Partner"
                   image={ethiopianImages.attorney3}
-                  specialties={["Litigation", "Dispute Resolution"]}
-                  education={["J.D., Stanford Law School", "B.A., University of California, Berkeley"]}
-                  bio="Michael leads our litigation practice and has successfully represented clients in high-stakes disputes across various industries. His strategic approach to litigation has resulted in numerous favorable outcomes."
-                  email="m.rodriguez@prestigelaw.com"
-                  phone="(212) 555-1003"
-                  linkedin="https://www.linkedin.com/in/michaelrodriguez"
+                  specialties={["Ethiopian Litigation", "Alternative Dispute Resolution"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., University of Cape Town"]}
+                  bio="Dawit leads our litigation practice and has successfully represented clients in high-stakes disputes before Ethiopian federal and regional courts. His strategic approach to Ethiopian litigation has resulted in numerous favorable outcomes."
+                  email="d.bekele@warmlawfirm.com"
+                  phone="+251 11 551 7003"
+                  linkedin="https://www.linkedin.com/in/dawitbekele"
                 />
 
                 <AttorneyCard
-                  name="Sarah Johnson"
+                  name="Tigist Haile"
                   title="Senior Partner"
                   image={ethiopianImages.attorney4}
-                  specialties={["Intellectual Property", "Technology Law"]}
-                  education={["J.D., New York University", "M.S., MIT", "B.S., Cornell University"]}
-                  bio="Sarah leads our intellectual property practice, combining her legal expertise with a background in computer science. She has helped numerous technology companies protect and leverage their IP assets."
-                  email="s.johnson@prestigelaw.com"
-                  phone="(212) 555-1004"
-                  linkedin="https://www.linkedin.com/in/sarahjohnson"
+                  specialties={["Ethiopian Intellectual Property", "Technology Law"]}
+                  education={["LL.B., Addis Ababa University", "LL.M., University of London", "B.S., Addis Ababa Science and Technology University"]}
+                  bio="Tigist leads our intellectual property practice, combining her legal expertise with a background in computer science. She has helped numerous Ethiopian technology companies protect and leverage their IP assets within Ethiopia's evolving IP framework."
+                  email="t.haile@warmlawfirm.com"
+                  phone="+251 11 551 7004"
+                  linkedin="https://www.linkedin.com/in/tigisthaile"
                 />
 
                 <AttorneyCard
-                  name="David Thompson"
+                  name="Solomon Tesfaye"
                   title="Senior Partner"
                   image={ethiopianImages.attorney5}
-                  specialties={["Tax Law", "Estate Planning"]}
-                  education={["J.D., Georgetown University", "LL.M. in Taxation, NYU", "B.A., Dartmouth College"]}
-                  bio="David specializes in tax planning for high-net-worth individuals and corporations. His strategic approach to tax matters has helped clients navigate complex regulations while optimizing their tax positions."
-                  email="d.thompson@prestigelaw.com"
-                  phone="(212) 555-1005"
-                  linkedin="https://www.linkedin.com/in/davidthompson"
+                  specialties={["Ethiopian Tax Law", "Business Planning"]}
+                  education={["LL.B., Addis Ababa University", "LL.M. in Taxation, University of Pretoria", "B.A., Bahir Dar University"]}
+                  bio="Solomon specializes in Ethiopian tax planning for high-net-worth individuals and corporations. His strategic approach to Ethiopian tax matters has helped clients navigate complex regulations while optimizing their tax positions under Ethiopian law."
+                  email="s.tesfaye@warmlawfirm.com"
+                  phone="+251 11 551 7005"
+                  linkedin="https://www.linkedin.com/in/solomontesfaye"
                 />
 
                 <AttorneyCard
@@ -622,21 +622,21 @@ export default function AttorneysPage() {
               <h2 className="heading-lg mb-4">Join Our Team</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Prestige Law, we are always looking for talented attorneys and legal professionals who share our
+                At Warm Law Firm, we are always looking for talented Ethiopian attorneys and legal professionals who share our
                 commitment to excellence and client service. We offer a collaborative work environment, challenging
-                work, and opportunities for professional growth and development.
+                work, and opportunities for professional growth and development within Ethiopia's evolving legal landscape.
               </p>
               <p className="body-md mb-6">
-                Our attorneys benefit from mentorship opportunities, access to cutting-edge legal technology, and a
+                Our attorneys benefit from mentorship opportunities, access to legal technology, and a
                 supportive culture that values work-life balance. We are committed to diversity and inclusion and seek
-                to build a team that reflects the communities we serve.
+                to build a team that represents all of Ethiopia's regions and communities.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="law-card p-4">
-                  <h3 className="font-medium text-lg mb-1">Associate Attorney - Corporate Law</h3>
-                  <p className="text-sm text-law-brown-600 dark:text-law-beige-400 mb-2">New York, NY</p>
+                  <h3 className="font-medium text-lg mb-1">Associate Attorney - Ethiopian Corporate Law</h3>
+                  <p className="text-sm text-law-brown-600 dark:text-law-beige-400 mb-2">Addis Ababa, Ethiopia</p>
                   <p className="text-sm mb-3">
-                    Seeking an associate with 3-5 years of experience in corporate transactions and securities law.
+                    Seeking an associate with 3-5 years of experience in Ethiopian corporate transactions and commercial law.
                   </p>
                   <Link href="/careers/corporate-associate">
                     <Button variant="link" className="text-law-beige-500 dark:text-law-brown-500 p-0">
@@ -645,10 +645,10 @@ export default function AttorneysPage() {
                   </Link>
                 </div>
                 <div className="law-card p-4">
-                  <h3 className="font-medium text-lg mb-1">Associate Attorney - Litigation</h3>
-                  <p className="text-sm text-law-brown-600 dark:text-law-beige-400 mb-2">New York, NY</p>
+                  <h3 className="font-medium text-lg mb-1">Associate Attorney - Ethiopian Litigation</h3>
+                  <p className="text-sm text-law-brown-600 dark:text-law-beige-400 mb-2">Addis Ababa, Ethiopia</p>
                   <p className="text-sm mb-3">
-                    Seeking a litigation associate with 2-4 years of experience in commercial disputes.
+                    Seeking a litigation associate with 2-4 years of experience in Ethiopian commercial disputes and court procedures.
                   </p>
                   <Link href="/careers/litigation-associate">
                     <Button variant="link" className="text-law-beige-500 dark:text-law-brown-500 p-0">
@@ -680,10 +680,10 @@ export default function AttorneysPage() {
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-6 text-white">Ready to Work With Our Team?</h2>
+            <h2 className="heading-lg mb-6 text-white">Ready to Work With Our Ethiopian Team?</h2>
             <p className="body-lg mb-8 text-law-beige-100">
-              Our experienced attorneys are ready to help you navigate your legal challenges and achieve your goals.
-              Contact us today to schedule a consultation.
+              Our experienced Ethiopian attorneys are ready to help you navigate your legal challenges within Ethiopia's legal system and achieve your goals.
+              Contact us today to schedule a consultation at our Addis Ababa office.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="btn-law bg-white text-law-brown-900 hover:bg-law-beige-100 dark:bg-law-beige-100 dark:text-law-brown-900 dark:hover:bg-law-beige-200">
