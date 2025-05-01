@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Scale, FileText, Briefcase, Users, Clock, CheckCircle, Phone, Mail } from "lucide-react"
+import { ethiopianImages } from "@/data/ethiopian-images"
 
 export default function Home() {
   return (
@@ -10,7 +11,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-20"></div>
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-30 dark:opacity-20"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.heroBackground}
+            alt="Ethiopian-themed background"
+            fill
+            className="object-cover opacity-30 dark:opacity-20"
+          />
+        </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <span className="badge-law mb-4 inline-block fade-in">Expert Legal Representation</span>
@@ -42,7 +50,7 @@ export default function Home() {
             {/* Practice Area Card 1 */}
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=200&width=400" alt="Corporate Law" fill className="object-cover" />
+                <Image src={ethiopianImages.corporateLaw} alt="Corporate Law" fill className="object-cover" />
                 <div className="img-overlay"></div>
                 <div className="absolute bottom-0 left-0 p-4">
                   <h3 className="text-xl font-serif font-bold text-white">Corporate Law</h3>
@@ -63,7 +71,7 @@ export default function Home() {
             {/* Practice Area Card 2 */}
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=200&width=400" alt="Litigation" fill className="object-cover" />
+                <Image src={ethiopianImages.litigation} alt="Litigation" fill className="object-cover" />
                 <div className="img-overlay"></div>
                 <div className="absolute bottom-0 left-0 p-4">
                   <h3 className="text-xl font-serif font-bold text-white">Litigation</h3>
@@ -85,7 +93,7 @@ export default function Home() {
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src={ethiopianImages.realEstate}
                   alt="Real Estate Law"
                   fill
                   className="object-cover"
@@ -111,7 +119,7 @@ export default function Home() {
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src={ethiopianImages.intellectualProperty}
                   alt="Intellectual Property"
                   fill
                   className="object-cover"
@@ -136,7 +144,7 @@ export default function Home() {
             {/* Practice Area Card 5 */}
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=200&width=400" alt="Employment Law" fill className="object-cover" />
+                <Image src={ethiopianImages.litigation} alt="Employment Law" fill className="object-cover" />
                 <div className="img-overlay"></div>
                 <div className="absolute bottom-0 left-0 p-4">
                   <h3 className="text-xl font-serif font-bold text-white">Employment Law</h3>
@@ -157,7 +165,7 @@ export default function Home() {
             {/* Practice Area Card 6 */}
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
-                <Image src="/placeholder.svg?height=200&width=400" alt="Tax Law" fill className="object-cover" />
+                <Image src={ethiopianImages.taxLaw} alt="Tax Law" fill className="object-cover" />
                 <div className="img-overlay"></div>
                 <div className="absolute bottom-0 left-0 p-4">
                   <h3 className="text-xl font-serif font-bold text-white">Tax Law</h3>
@@ -227,7 +235,7 @@ export default function Home() {
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=400"
+                src={ethiopianImages.officeExterior}
                 alt="Prestige Law Office"
                 fill
                 className="object-cover"
@@ -302,7 +310,14 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className="section-padding relative">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.heroBackground}
+            alt="Ethiopian-themed background"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="text-center mb-12">
@@ -319,7 +334,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client1}
                       alt="Client Photo"
                       fill
                       className="object-cover"
@@ -342,7 +357,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client2}
                       alt="Client Photo"
                       fill
                       className="object-cover"
@@ -365,7 +380,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client3}
                       alt="Client Photo"
                       fill
                       className="object-cover"
@@ -425,7 +440,7 @@ export default function Home() {
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src={ethiopianImages.blog1}
                   alt="Recent Legal Developments"
                   fill
                   className="object-cover"
@@ -452,7 +467,7 @@ export default function Home() {
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src={ethiopianImages.blog2}
                   alt="Intellectual Property Protection"
                   fill
                   className="object-cover"
@@ -479,7 +494,7 @@ export default function Home() {
             <Card className="law-card overflow-hidden hover-lift">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src={ethiopianImages.blog3}
                   alt="Employment Law Updates"
                   fill
                   className="object-cover"
