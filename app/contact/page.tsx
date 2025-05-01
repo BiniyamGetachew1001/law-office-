@@ -8,36 +8,31 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
-import { 
-  Form, 
-  FormControl, 
-  FormDescription, 
-  FormField, 
-  FormItem, 
-  FormLabel, 
-  FormMessage 
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage
 } from "@/components/ui/form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { 
-  ArrowRight, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock, 
-  CheckCircle, 
-  Facebook, 
-  Linkedin, 
-  Twitter, 
-  Instagram 
+import {
+  ArrowRight,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  CheckCircle,
+  Facebook,
+  Linkedin,
+  Twitter,
+  Instagram
 } from "lucide-react"
 import DynamicBackground from "@/components/dynamic-background"
-
-export const metadata = {
-  title: "Contact Us | Prestige Law",
-  description: "Get in touch with our team of experienced attorneys for a consultation or to discuss your legal needs.",
-}
 
 // Form validation schema
 const formSchema = z.object({
@@ -99,14 +94,14 @@ export default function ContactPage() {
   // Form submission handler
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
-    
+
     // Simulate API call
     setTimeout(() => {
       console.log(values)
       setIsSubmitting(false)
       setIsSuccess(true)
       form.reset()
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSuccess(false)
@@ -205,8 +200,8 @@ export default function ContactPage() {
                       <p className="body-md mb-6">
                         Your message has been sent successfully. One of our team members will get back to you shortly.
                       </p>
-                      <Button 
-                        className="btn-law" 
+                      <Button
+                        className="btn-law"
                         onClick={() => setIsSuccess(false)}
                       >
                         Send Another Message
@@ -276,10 +271,10 @@ export default function ContactPage() {
                             <FormItem>
                               <FormLabel>Message</FormLabel>
                               <FormControl>
-                                <Textarea 
-                                  placeholder="Please provide details about your legal matter..." 
-                                  className="min-h-[150px]" 
-                                  {...field} 
+                                <Textarea
+                                  placeholder="Please provide details about your legal matter..."
+                                  className="min-h-[150px]"
+                                  {...field}
                                 />
                               </FormControl>
                               <FormMessage />
@@ -306,9 +301,9 @@ export default function ContactPage() {
                             </FormItem>
                           )}
                         />
-                        <Button 
-                          type="submit" 
-                          className="btn-law w-full" 
+                        <Button
+                          type="submit"
+                          className="btn-law w-full"
                           disabled={isSubmitting}
                         >
                           {isSubmitting ? "Sending..." : "Send Message"}
