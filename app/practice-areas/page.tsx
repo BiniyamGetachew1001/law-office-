@@ -18,7 +18,14 @@ export default function PracticeAreasPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <DynamicBackground variant="gradient" intensity="light" className="absolute inset-0" />
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center opacity-20 dark:opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.practiceAreasHero}
+            alt="Ethiopian legal practice"
+            fill
+            className="object-cover opacity-20 dark:opacity-10"
+          />
+        </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">Our Practice Areas</h1>
@@ -47,7 +54,7 @@ export default function PracticeAreasPage() {
               title="Corporate Law"
               description="Comprehensive legal solutions for businesses of all sizes, from formation to complex transactions."
               icon="Briefcase"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.corporateLaw}
               link="/practice-areas/corporate-law"
             />
 
@@ -55,7 +62,7 @@ export default function PracticeAreasPage() {
               title="Litigation"
               description="Strategic representation in complex disputes, with a proven track record of successful outcomes."
               icon="Scale"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.litigation}
               link="/practice-areas/litigation"
             />
 
@@ -63,7 +70,7 @@ export default function PracticeAreasPage() {
               title="Real Estate Law"
               description="Expert guidance through property transactions, development projects, and real estate disputes."
               icon="Building"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.realEstate}
               link="/practice-areas/real-estate"
             />
 
@@ -71,7 +78,7 @@ export default function PracticeAreasPage() {
               title="Intellectual Property"
               description="Protection and enforcement of patents, trademarks, copyrights, and trade secrets."
               icon="FileText"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.intellectualProperty}
               link="/practice-areas/intellectual-property"
             />
 
@@ -79,7 +86,7 @@ export default function PracticeAreasPage() {
               title="Employment Law"
               description="Representation for both employers and employees in workplace disputes and compliance matters."
               icon="Users"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.employmentLaw}
               link="/practice-areas/employment-law"
             />
 
@@ -87,7 +94,7 @@ export default function PracticeAreasPage() {
               title="Tax Law"
               description="Strategic tax planning and resolution of tax controversies for individuals and businesses."
               icon="Calculator"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.taxLaw}
               link="/practice-areas/tax-law"
             />
 
@@ -95,7 +102,7 @@ export default function PracticeAreasPage() {
               title="Family Law"
               description="Compassionate guidance through divorce, child custody, and other family legal matters."
               icon="Heart"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.familyLaw}
               link="/practice-areas/family-law"
             />
 
@@ -103,7 +110,7 @@ export default function PracticeAreasPage() {
               title="Estate Planning"
               description="Comprehensive estate planning services, including wills, trusts, and succession planning."
               icon="FileSignature"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.estatePlanning}
               link="/practice-areas/estate-planning"
             />
 
@@ -111,7 +118,7 @@ export default function PracticeAreasPage() {
               title="Mergers & Acquisitions"
               description="Strategic guidance through complex M&A transactions, from due diligence to closing."
               icon="GitMerge"
-              image="/placeholder.svg?height=200&width=400"
+              image={ethiopianImages.mergersAcquisitions}
               link="/practice-areas/mergers-acquisitions"
             />
           </div>
@@ -124,7 +131,7 @@ export default function PracticeAreasPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=400"
+                src={ethiopianImages.attorneys}
                 alt="Attorneys in meeting"
                 fill
                 className="object-cover"
@@ -294,7 +301,14 @@ export default function PracticeAreasPage() {
 
       {/* Client Testimonials */}
       <section className="section-padding relative">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.federalCourt}
+            alt="Ethiopian courthouse"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="text-center mb-12">
@@ -311,7 +325,7 @@ export default function PracticeAreasPage() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client1}
                       alt="Client Photo"
                       fill
                       className="object-cover"
@@ -335,7 +349,7 @@ export default function PracticeAreasPage() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client2}
                       alt="Client Photo"
                       fill
                       className="object-cover"
@@ -359,7 +373,7 @@ export default function PracticeAreasPage() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src={ethiopianImages.client3}
                       alt="Client Photo"
                       fill
                       className="object-cover"
