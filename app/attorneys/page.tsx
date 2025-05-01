@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import AttorneyCard from "@/components/attorney-card"
 import DynamicBackground from "@/components/dynamic-background"
+import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
   title: "Our Attorneys | Prestige Law",
@@ -20,7 +21,14 @@ export default function AttorneysPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <DynamicBackground variant="gradient" intensity="light" className="absolute inset-0" />
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center opacity-20 dark:opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.attorneys}
+            alt="Ethiopian attorneys team"
+            fill
+            className="object-cover opacity-20 dark:opacity-10"
+          />
+        </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">Our Attorneys</h1>
@@ -138,7 +146,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="James Harrington"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney1}
                   specialties={["Corporate Law", "Mergers & Acquisitions"]}
                   education={["J.D., Harvard Law School", "B.A., Yale University"]}
                   bio="James has over 35 years of experience in corporate law and has led some of the firm's most significant M&A transactions. He is recognized as a leading authority in corporate governance and securities regulation."
@@ -150,7 +158,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Elizabeth Chen"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney2}
                   specialties={["Real Estate Law", "Commercial Transactions"]}
                   education={["J.D., Columbia Law School", "B.S., University of Pennsylvania"]}
                   bio="Elizabeth specializes in complex real estate transactions and development projects. Her expertise in navigating regulatory challenges has made her a trusted advisor to major developers and investors."
@@ -162,7 +170,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Michael Rodriguez"
                   title="Managing Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney3}
                   specialties={["Litigation", "Dispute Resolution"]}
                   education={["J.D., Stanford Law School", "B.A., University of California, Berkeley"]}
                   bio="Michael leads our litigation practice and has successfully represented clients in high-stakes disputes across various industries. His strategic approach to litigation has resulted in numerous favorable outcomes."
@@ -174,7 +182,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Sarah Johnson"
                   title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney4}
                   specialties={["Intellectual Property", "Technology Law"]}
                   education={["J.D., New York University", "M.S., MIT", "B.S., Cornell University"]}
                   bio="Sarah leads our intellectual property practice, combining her legal expertise with a background in computer science. She has helped numerous technology companies protect and leverage their IP assets."
@@ -186,7 +194,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="David Thompson"
                   title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney5}
                   specialties={["Tax Law", "Estate Planning"]}
                   education={["J.D., Georgetown University", "LL.M. in Taxation, NYU", "B.A., Dartmouth College"]}
                   bio="David specializes in tax planning for high-net-worth individuals and corporations. His strategic approach to tax matters has helped clients navigate complex regulations while optimizing their tax positions."
@@ -198,7 +206,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Jennifer Lee"
                   title="Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney6}
                   specialties={["Employment Law", "Labor Relations"]}
                   education={["J.D., University of Chicago", "B.A., Northwestern University"]}
                   bio="Jennifer represents employers in all aspects of employment law, from compliance matters to litigation. She is known for her practical approach to workplace issues and proactive risk management strategies."
@@ -210,7 +218,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Robert Wilson"
                   title="Senior Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney7}
                   specialties={["Corporate Law", "Securities"]}
                   education={["J.D., Columbia Law School", "B.A., Princeton University"]}
                   bio="Robert focuses on securities offerings and corporate governance matters. He has advised clients on numerous public and private offerings and SEC compliance issues."
@@ -222,7 +230,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Sophia Martinez"
                   title="Senior Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney8}
                   specialties={["Litigation", "White Collar Defense"]}
                   education={["J.D., Yale Law School", "B.A., Brown University"]}
                   bio="Sophia specializes in complex commercial litigation and white-collar defense. She has represented clients in federal and state courts across a wide range of industries."
@@ -234,7 +242,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Daniel Kim"
                   title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney1}
                   specialties={["Intellectual Property", "Technology Transactions"]}
                   education={["J.D., Berkeley Law", "B.S., Stanford University"]}
                   bio="Daniel focuses on technology transactions and IP licensing. His background in computer science provides valuable insights for clients in the technology sector."
@@ -246,7 +254,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Emily Patel"
                   title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney2}
                   specialties={["Real Estate", "Land Use"]}
                   education={["J.D., Georgetown University", "B.A., Emory University"]}
                   bio="Emily specializes in real estate transactions and land use matters. She has assisted clients with acquisitions, development projects, and zoning issues across the region."
@@ -258,7 +266,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Thomas Wright"
                   title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney3}
                   specialties={["Tax Law", "Corporate Restructuring"]}
                   education={["J.D., University of Virginia", "B.S., University of North Carolina"]}
                   bio="Thomas advises clients on tax matters related to corporate transactions and restructurings. His analytical approach helps clients navigate complex tax implications."
@@ -270,7 +278,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Olivia Garcia"
                   title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney4}
                   specialties={["Employment Law", "Compliance"]}
                   education={["J.D., UCLA School of Law", "B.A., UC San Diego"]}
                   bio="Olivia focuses on employment compliance and workplace investigations. She helps employers develop policies and practices that mitigate legal risks while fostering positive workplace cultures."
@@ -282,7 +290,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Richard Bennett"
                   title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney5}
                   specialties={["Corporate Law", "International Business"]}
                   education={["J.D., Harvard Law School", "M.B.A., Harvard Business School", "B.A., Dartmouth College"]}
                   bio="Richard brings decades of experience in international business transactions. Before joining Prestige Law, he served as general counsel for a Fortune 100 company, overseeing legal matters across global operations."
@@ -294,7 +302,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Margaret Wu"
                   title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney6}
                   specialties={["Intellectual Property", "Patent Law"]}
                   education={["J.D., Stanford Law School", "Ph.D., Electrical Engineering, MIT", "B.S., Caltech"]}
                   bio="Margaret specializes in patent law with a focus on electronics and software. Her technical background and legal expertise make her an invaluable resource for technology clients seeking to protect their innovations."
@@ -306,7 +314,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Jonathan Brooks"
                   title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney7}
                   specialties={["Environmental Law", "Regulatory Compliance"]}
                   education={[
                     "J.D., Yale Law School",
@@ -326,7 +334,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="James Harrington"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney1}
                   specialties={["Corporate Law", "Mergers & Acquisitions"]}
                   education={["J.D., Harvard Law School", "B.A., Yale University"]}
                   bio="James has over 35 years of experience in corporate law and has led some of the firm's most significant M&A transactions. He is recognized as a leading authority in corporate governance and securities regulation."
@@ -338,7 +346,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Elizabeth Chen"
                   title="Founding Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney2}
                   specialties={["Real Estate Law", "Commercial Transactions"]}
                   education={["J.D., Columbia Law School", "B.S., University of Pennsylvania"]}
                   bio="Elizabeth specializes in complex real estate transactions and development projects. Her expertise in navigating regulatory challenges has made her a trusted advisor to major developers and investors."
@@ -350,7 +358,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Michael Rodriguez"
                   title="Managing Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney3}
                   specialties={["Litigation", "Dispute Resolution"]}
                   education={["J.D., Stanford Law School", "B.A., University of California, Berkeley"]}
                   bio="Michael leads our litigation practice and has successfully represented clients in high-stakes disputes across various industries. His strategic approach to litigation has resulted in numerous favorable outcomes."
@@ -362,7 +370,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Sarah Johnson"
                   title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney4}
                   specialties={["Intellectual Property", "Technology Law"]}
                   education={["J.D., New York University", "M.S., MIT", "B.S., Cornell University"]}
                   bio="Sarah leads our intellectual property practice, combining her legal expertise with a background in computer science. She has helped numerous technology companies protect and leverage their IP assets."
@@ -374,7 +382,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="David Thompson"
                   title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney5}
                   specialties={["Tax Law", "Estate Planning"]}
                   education={["J.D., Georgetown University", "LL.M. in Taxation, NYU", "B.A., Dartmouth College"]}
                   bio="David specializes in tax planning for high-net-worth individuals and corporations. His strategic approach to tax matters has helped clients navigate complex regulations while optimizing their tax positions."
@@ -386,7 +394,7 @@ export default function AttorneysPage() {
                 <AttorneyCard
                   name="Jennifer Lee"
                   title="Partner"
-                  image="/placeholder.svg?height=300&width=300"
+                  image={ethiopianImages.attorney6}
                   specialties={["Employment Law", "Labor Relations"]}
                   education={["J.D., University of Chicago", "B.A., Northwestern University"]}
                   bio="Jennifer represents employers in all aspects of employment law, from compliance matters to litigation. She is known for her practical approach to workplace issues and proactive risk management strategies."
@@ -536,7 +544,7 @@ export default function AttorneysPage() {
             <div className="text-center">
               <div className="relative h-64 w-64 mx-auto rounded-full overflow-hidden mb-6">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src={ethiopianImages.attorney1}
                   alt="James Harrington"
                   fill
                   className="object-cover"
@@ -557,7 +565,7 @@ export default function AttorneysPage() {
 
             <div className="text-center">
               <div className="relative h-64 w-64 mx-auto rounded-full overflow-hidden mb-6">
-                <Image src="/placeholder.svg?height=300&width=300" alt="Elizabeth Chen" fill className="object-cover" />
+                <Image src={ethiopianImages.attorney2} alt="Elizabeth Chen" fill className="object-cover" />
               </div>
               <h3 className="heading-md mb-1">Elizabeth Chen</h3>
               <p className="text-law-beige-500 dark:text-law-brown-500 font-medium mb-4">Founding Partner</p>
@@ -575,7 +583,7 @@ export default function AttorneysPage() {
             <div className="text-center">
               <div className="relative h-64 w-64 mx-auto rounded-full overflow-hidden mb-6">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src={ethiopianImages.attorney3}
                   alt="Michael Rodriguez"
                   fill
                   className="object-cover"
@@ -603,7 +611,7 @@ export default function AttorneysPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=500&width=400"
+                src={ethiopianImages.meetingRoom}
                 alt="Attorneys in meeting"
                 fill
                 className="object-cover"
@@ -661,7 +669,14 @@ export default function AttorneysPage() {
 
       {/* CTA Section */}
       <section className="section-padding relative">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0">
+          <Image
+            src={ethiopianImages.justiceMinistry}
+            alt="Ethiopian justice ministry"
+            fill
+            className="object-cover opacity-10"
+          />
+        </div>
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
