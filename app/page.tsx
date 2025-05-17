@@ -6,6 +6,24 @@ import { ArrowRight, Scale, FileText, Briefcase, Users, Clock, CheckCircle, Phon
 import { ethiopianImages } from "@/data/ethiopian-images"
 import EthiopiaMap from "@/components/ethiopia-map"
 
+export const metadata = {
+  title: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+  description: "Gebru Mahitem Law Office provides professional legal services in Ethiopia, specializing in personal injury, criminal defense, family law, business litigation, and more. Based in Addis Ababa and led by Attorney Gebru Mahitem.",
+  openGraph: {
+    title: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+    description: "Gebru Mahitem Law Office provides professional legal services in Ethiopia, specializing in personal injury, criminal defense, family law, business litigation, and more. Based in Addis Ababa and led by Attorney Gebru Mahitem.",
+    url: "https://gebrumahitemlawoffice1.vercel.app/",
+    siteName: "Gebru Mahitem Law Office",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+    description: "Gebru Mahitem Law Office provides professional legal services in Ethiopia, specializing in personal injury, criminal defense, family law, business litigation, and more. Based in Addis Ababa and led by Attorney Gebru Mahitem.",
+  },
+};
+
 export default function Home() {
   return (
     <div>
