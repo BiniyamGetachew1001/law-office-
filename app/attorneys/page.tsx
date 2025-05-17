@@ -102,19 +102,6 @@ export default function AttorneysPage() {
           </ul>
         </div>
       </section>
-
-      {/* Prompt for Website Generation */}
-      <section className="section-padding">
-        <div className="container">
-          <div className="text-center mb-8">
-            <span className="badge-law mb-2 inline-block">Prompt for Website Generation</span>
-            <h2 className="heading-lg mb-4">Best Prompt to Generate a Website for Gebru Mahitem Law Office</h2>
-            <p className="body-md max-w-2xl mx-auto">
-              Build a professional, modern, and responsive website for Gebru Mahitem Law Office, a law firm based in Addis Ababa, Ethiopia. The website should feature attorney Gebru Mahitem's profile, areas of expertise (personal injury, criminal defense, family law, business litigation, and more), detailed contact information (address: Gulele 07 1378 St, Addis Ababa, Ethiopia; phone: 0940349840; mobile: 0905048804; website: www.tiktok.com/@gebru.mahitem), company description, and a section for frequently asked questions. The design should reflect trust, integrity, and professionalism, and be optimized for both desktop and mobile devices.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
