@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata = {
-  title: "Privacy Policy | Fiker Getachew And Associates Law Office",
-  description: "Learn about how Fiker Getachew And Associates Law Office (FGA) collects, uses, and protects your personal information in accordance with Ethiopian law.",
+  title: "Privacy Policy | Gebru Mahitem Law Office",
+  description: "Learn about how Gebru Mahitem Law Office collects, uses, and protects your personal information in accordance with Ethiopian law.",
 }
 
 export default function PrivacyPolicyPage() {
@@ -162,12 +162,10 @@ export default function PrivacyPolicyPage() {
           </p>
           <div className="bg-law-beige-100 dark:bg-law-brown-800/50 p-6 rounded-lg mb-8">
             <p className="body-md mb-2">
-              <strong>Warm Law Firm</strong>
+              <strong>Gebru Mahitem Law Office</strong>
             </p>
-            <p className="body-md mb-2">Bole Road, Friendship Building, 5th Floor</p>
-            <p className="body-md mb-2">Addis Ababa, Ethiopia</p>
             <p className="body-md mb-2">
-              <strong>Email:</strong> privacy@warmlawfirm.com
+              <strong>Email:</strong> [PLACEHOLDER - INSERT OFFICE EMAIL]
             </p>
             <p className="body-md">
               <strong>Phone:</strong> +251 11 551 7777

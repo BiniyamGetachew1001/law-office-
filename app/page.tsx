@@ -8,7 +8,7 @@ import EthiopiaMap from "@/components/ethiopia-map"
 
 export default function Home() {
   return (
-    <>
+    <div>
       {/* Hero Section */}
       <section className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-20"></div>
@@ -22,10 +22,10 @@ export default function Home() {
         </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <span className="badge-law mb-4 inline-block fade-in">Ethiopia's Best Law Office</span>
-            <h1 className="heading-xl mb-6 fade-in fade-in-delay-1">Fiker Getachew And Associates Law Office</h1>
+            <span className="badge-law mb-4 inline-block fade-in">Professional Ethiopian Legal Services</span>
+            <h1 className="heading-xl mb-6 fade-in fade-in-delay-1">Gebru Mahitem Law Office</h1>
             <p className="body-lg mb-8 fade-in fade-in-delay-2">
-              FGA is the best law office in Ethiopia with diversified areas of expertise. We provide quality legal services with creative solutions, with expertise ranging from local Ethiopian law to international law.
+              {`Established in 2015, we are a full-service Ethiopian law firm specializing in personal injury, criminal defense, and family law. Led by Attorney Gebru Mahitem with 15+ years of courtroom experience, we provide compassionate yet aggressive representation.`}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 fade-in fade-in-delay-3">
               <Button className="btn-law">Schedule a Consultation</Button>
@@ -201,30 +201,30 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="badge-law mb-2 inline-block">About Us</span>
-              <h2 className="heading-lg mb-4">Ethiopia's Best Law Office</h2>
+              <h2 className="heading-lg mb-4">Your Trusted Legal Partner in Addis Ababa</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                Fiker Getachew And Associates Law Office (FGA) is the best law office in Ethiopia with diversified areas of expertise.
-                FGA is providing quality legal services with creative solutions. Our associates and I are a group of lawyers with
-                varying expertise and experience ranging from local Ethiopian law to international law.
+                Established in 2022, Gebru Mahitem Law Office is a dedicated legal practice located in the heart of Addis Ababa, Ethiopia. Led by Attorney and Consultant at Law, Gebru Mahitem, who brings over 11 years of legal experience, the firm offers a wide range of legal services tailored to meet the needs of individuals and businesses alike.
               </p>
               <p className="body-md mb-6">
-                We pride ourselves on our client-centered approach, combining legal expertise with creative solutions
-                to meet our clients' needs. Whether representing individuals, local businesses, or international corporations operating in Ethiopia, we are dedicated
-                to achieving the best possible outcomes while maintaining the highest ethical standards.
+                With a commitment to integrity, expertise, and client satisfaction, we strive to provide personalized and effective legal solutions.
+              </p>
+              <p className="body-md mb-6">
+                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
+                At Abate Yimer Law Office, we strive to provide an international standard local solution to meet our Client's needs.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">Diversified areas of expertise in Ethiopian and international law</span>
+                  <span className="body-md">European trained corporate lawyers with expertise in Ethiopian and international law</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">Quality legal services with creative solutions</span>
+                  <span className="body-md">Specialized in project finance, energy and corporate legal matters</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">Proven track record of successful outcomes in Ethiopian courts</span>
+                  <span className="body-md">International standard local solutions to meet our Client's needs</span>
                 </li>
               </ul>
               <Link href="/about">
@@ -351,7 +351,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "The team at Fiker Getachew And Associates provided exceptional guidance during our company's expansion in Addis Ababa. Their creative solutions
+                  "Gebru Mahitem provided exceptional guidance during our company's expansion in Addis Ababa. His creative solutions
                   to complex legal challenges made the process manageable and successful."
                 </p>
               </CardContent>
@@ -374,7 +374,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "I've worked with Fiker Getachew And Associates on multiple development projects in Addis Ababa. Their thorough understanding of Ethiopian property rights
+                  "I've worked with Gebru Mahitem on multiple development projects in Addis Ababa. His thorough understanding of Ethiopian property rights
                   and creative approach to navigating local regulations has been invaluable to our success."
                 </p>
               </CardContent>
@@ -397,8 +397,8 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "The intellectual property team at Fiker Getachew And Associates helped protect our innovations within Ethiopia's emerging tech sector and navigate complex
-                  international licensing agreements. Their expertise in Ethiopian IP law and creative solutions has been crucial to our company's growth."
+                  "Gebru Mahitem helped protect our innovations within Ethiopia's emerging tech sector and navigate complex
+                  international licensing agreements. His expertise in Ethiopian IP law and creative solutions has been crucial to our company's growth."
                 </p>
               </CardContent>
             </Card>
@@ -413,8 +413,8 @@ export default function Home() {
             <span className="badge-law mb-2 inline-block">Get Started</span>
             <h2 className="heading-lg mb-6">Schedule Your Consultation Today</h2>
             <p className="body-lg mb-8">
-              Fiker Getachew And Associates Law Office (FGA) is ready to help you with our diversified areas of expertise.
-              We provide quality legal services with creative solutions for all your legal needs in Ethiopia.
+              Abate Yimer Law Office is ready to help you with our highly experienced group of legal professionals.
+              We strive to provide an international standard local solution to meet our Client's needs in project finance, energy and corporate legal matters.
               Contact us today to schedule a consultation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -436,109 +436,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent News Section */}
-      <section className="section-padding">
-        <div className="container">
-          <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">News & Insights</span>
-            <h2 className="heading-lg mb-4">Latest Articles</h2>
-            <p className="body-md max-w-2xl mx-auto">
-              Stay informed with our latest Ethiopian legal insights, news, and updates from Fiker Getachew And Associates Law Office.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="law-card overflow-hidden hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.blog1}
-                  alt="Recent Legal Developments"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-              </div>
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <Clock className="h-4 w-4 mr-1 text-law-beige-500 dark:text-law-brown-500" />
-                  <span className="text-sm text-law-brown-600 dark:text-law-beige-400">May 12, 2023</span>
-                </div>
-                <h3 className="heading-sm mb-2">Recent Developments in Ethiopian Corporate Law</h3>
-                <p className="body-md mb-4">
-                  An overview of key changes in Ethiopian corporate regulations and their implications for businesses operating in Ethiopia.
-                </p>
-                <Link href="/blog/corporate-law-developments">
-                  <Button variant="outline" className="w-full hover:bg-law-beige-100 dark:hover:bg-law-brown-800/50">
-                    Read Article <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card overflow-hidden hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.blog2}
-                  alt="Intellectual Property Protection"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-              </div>
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <Clock className="h-4 w-4 mr-1 text-law-beige-500 dark:text-law-brown-500" />
-                  <span className="text-sm text-law-brown-600 dark:text-law-beige-400">April 28, 2023</span>
-                </div>
-                <h3 className="heading-sm mb-2">Protecting Intellectual Property in Ethiopia</h3>
-                <p className="body-md mb-4">
-                  Essential strategies for safeguarding your company's innovations, trademarks, and creative works under Ethiopia's evolving IP laws.
-                </p>
-                <Link href="/blog/intellectual-property-protection">
-                  <Button variant="outline" className="w-full hover:bg-law-beige-100 dark:hover:bg-law-brown-800/50">
-                    Read Article <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card overflow-hidden hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.blog3}
-                  alt="Employment Law Updates"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-              </div>
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-3">
-                  <Clock className="h-4 w-4 mr-1 text-law-beige-500 dark:text-law-brown-500" />
-                  <span className="text-sm text-law-brown-600 dark:text-law-beige-400">April 15, 2023</span>
-                </div>
-                <h3 className="heading-sm mb-2">Ethiopian Employment Law Updates for 2023</h3>
-                <p className="body-md mb-4">
-                  Important changes in Ethiopian labor regulations that employers and HR professionals operating in Ethiopia should be aware of.
-                </p>
-                <Link href="/blog/employment-law-updates">
-                  <Button variant="outline" className="w-full hover:bg-law-beige-100 dark:hover:bg-law-brown-800/50">
-                    Read Article <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-10">
-            <Link href="/blog">
-              <Button className="btn-law">
-                View All Articles <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+      <div className="container mx-auto px-4 py-8">
+        <p className="body-md mb-4">
+          {`Comprehensive representation for accident victims, workplace injuries, and medical malpractice cases.`}
+        </p>
+        <p className="body-md mb-4">
+          {`Aggressive defense for all criminal charges from misdemeanors to serious felonies.`}
+        </p>
+        <p className="body-md mb-4">
+          {`Criminal Defense`}
+        </p>
+        <p className="body-md mb-4">
+          {`Strategic representation in commercial disputes and contract enforcement.`}
+        </p>
+        <p className="body-md mb-4">
+          {`Family Law`}
+        </p>
+        <p className="body-md mb-4">
+          {`Compassionate guidance through divorce, child custody, and inheritance matters.`}
+        </p>
+        <p className="body-md mb-4">
+          {`Business Litigation`}
+        </p>
+        <p className="body-md mb-4">
+          {`Strategic representation in commercial disputes and contract enforcement.`}
+        </p>
+      </div>
+    </div>
   )
 }

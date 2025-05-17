@@ -22,8 +22,8 @@ import TimelineItem from "@/components/timeline-item"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
-  title: "About Us | Fiker Getachew And Associates Law Office",
-  description: "Learn about FGA, Ethiopia's best law office with diversified areas of expertise, providing quality legal services with creative solutions.",
+  title: "About Us | Gebru Mahitem Law Office",
+  description: "Learn about Gebru Mahitem Law Office, a full-service Ethiopian law firm led by Attorney Gebru Mahitem with 15+ years of courtroom experience.",
 }
 
 export default function AboutPage() {
@@ -42,10 +42,9 @@ export default function AboutPage() {
         </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">About Fiker Getachew And Associates</h1>
+            <h1 className="heading-xl mb-6">About Gebru Mahitem Law Office</h1>
             <p className="body-lg">
-              Ethiopia's best law office with diversified areas of expertise, providing quality legal services with creative solutions.
-              Our expertise ranges from local Ethiopian law to international law.
+              {`Led by Attorney Gebru Mahitem with 15+ years of courtroom experience, we provide compassionate yet aggressive representation in personal injury, criminal defense, and family law matters.`}
             </p>
           </div>
         </div>
@@ -60,14 +59,14 @@ export default function AboutPage() {
               <h2 className="heading-lg mb-4">Committed to Quality Legal Services</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Fiker Getachew And Associates Law Office (FGA), our mission is to provide quality legal services with creative solutions
-                within Ethiopia's unique legal landscape while maintaining the highest standards of integrity, professionalism, and client service.
-                We are dedicated to understanding each client's unique needs and delivering tailored solutions.
+                At Abate Yimer Law Office, our mission is to provide international standard local solutions to meet our Client's needs.
+                We are committed to providing catered solutions to Client's business and investment ventures in Ethiopia while maintaining
+                the highest standards of integrity, professionalism, and client service.
               </p>
               <p className="body-md mb-6">
-                We believe that effective legal representation in Ethiopia requires not only expertise in Ethiopian law but also a deep
-                understanding of international legal principles. Our diversified areas of expertise allow us to provide comprehensive legal services
-                for all your needs, from litigation to business formation and beyond.
+                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance,
+                energy and corporate legal matters. We believe that effective legal representation requires both local expertise and international
+                perspective.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <Card className="law-card">
@@ -124,10 +123,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="text-center mb-12">
             <span className="badge-law mb-2 inline-block">Our History</span>
-            <h2 className="heading-lg mb-4">Ethiopia's Best Law Office</h2>
+            <h2 className="heading-lg mb-4">Experienced Legal Professionals</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Fiker Getachew And Associates Law Office (FGA) has established itself as the best law office in Ethiopia with diversified areas of expertise,
-              serving clients throughout the country and internationally with quality legal services and creative solutions.
+              Abate Yimer Law Office has established itself as a highly experienced group of legal professionals with European trained corporate lawyers
+              committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
             </p>
           </div>
 
@@ -139,8 +138,8 @@ export default function AboutPage() {
             <div className="space-y-16">
               <TimelineItem
                 year="2015"
-                title="Founding of Fiker Getachew And Associates"
-                description="Established in Addis Ababa by Fiker Getachew with a focus on providing quality legal services with creative solutions across diversified areas of expertise."
+                title="Founding of Abate Yimer Law Office"
+                description="Established in Addis Ababa by Abate Yimer with a focus on providing international standard local solutions to meet our Client's needs in Ethiopia."
                 icon={<Scale className="h-6 w-6" />}
               />
 
@@ -438,14 +437,14 @@ export default function AboutPage() {
               <h2 className="heading-lg mb-4">Our Commitment to You</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Fiker Getachew And Associates Law Office (FGA), we believe that exceptional legal representation begins with understanding our clients'
-                needs, objectives, and concerns within the context of Ethiopia's unique legal and business environment. We are committed to providing quality legal services with creative solutions
+                At Abate Yimer Law Office, we believe that exceptional legal representation begins with understanding our clients'
+                business and investment ventures in Ethiopia. We are committed to providing catered solutions
                 throughout every stage of your legal matter.
               </p>
               <p className="body-md mb-6">
                 Our client-centered approach means that we take the time to listen, explain complex legal concepts in
-                clear terms, and keep you informed about developments in your case. We believe in building long-term
-                relationships based on trust, transparency, and results that respect Ethiopian cultural values while providing diversified legal expertise.
+                clear terms, and keep you informed about developments in your case. We strive to provide an international standard local solution
+                to meet our Client's needs while building strong reputation in project finance, energy and corporate legal matters.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">

@@ -53,7 +53,7 @@ const officeLocations = [
     name: "Addis Ababa Main Office",
     address: "Bole Road, Friendship Building, 5th Floor, Addis Ababa, Ethiopia",
     phone: "+251 911 992 719",
-    email: "info@fgalawoffice.com",
+    email: "info@abateyimerlaw.com",
     hours: "Monday - Friday: 8:00 AM - 6:00 PM",
   },
   {
@@ -61,7 +61,7 @@ const officeLocations = [
     name: "WhatsApp",
     address: "Available for virtual consultations",
     phone: "+251 911 992 719",
-    email: "info@fgalawoffice.com",
+    email: "info@abateyimerlaw.com",
     hours: "Monday - Sunday: 8:00 AM - 8:00 PM",
   },
   {
@@ -69,7 +69,7 @@ const officeLocations = [
     name: "International Clients",
     address: "Virtual consultations available for international clients",
     phone: "+251 911 992 719",
-    email: "international@fgalawoffice.com",
+    email: "international@abateyimerlaw.com",
     hours: "By appointment",
   },
 ]
@@ -117,9 +117,9 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center opacity-20 dark:opacity-10"></div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">Contact Fiker Getachew And Associates</h1>
+            <h1 className="heading-xl mb-6">Contact Abate Yimer Law Office</h1>
             <p className="body-lg">
-              FGA is the best law office in Ethiopia with diversified areas of expertise. We provide quality legal services with creative solutions.
+              We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
               Reach out today to schedule a consultation or discuss your legal needs with our experienced team.
             </p>
           </div>
@@ -406,7 +406,7 @@ export default function ContactPage() {
             <span className="badge-law mb-2 inline-block">Questions?</span>
             <h2 className="heading-lg mb-4">Frequently Asked Questions</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Find answers to common questions about contacting Fiker Getachew And Associates Law Office and scheduling consultations.
+              Find answers to common questions about contacting Abate Yimer Law Office and scheduling consultations.
             </p>
           </div>
 
@@ -445,10 +445,10 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-6 text-white">Ready to Get Started with Ethiopia's Best Law Office?</h2>
+            <h2 className="heading-lg mb-6 text-white">Ready to Get Started with Abate Yimer Law Office?</h2>
             <p className="body-lg mb-8 text-law-beige-100">
-              Fiker Getachew And Associates Law Office (FGA) is ready to help you with our diversified areas of expertise.
-              We provide quality legal services with creative solutions for all your legal needs in Ethiopia.
+              Abate Yimer Law Office is ready to help you with our highly experienced group of legal professionals.
+              We strive to provide an international standard local solution to meet our Client's needs in project finance, energy and corporate legal matters.
               Take the first step by contacting us today.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

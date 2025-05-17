@@ -45,7 +45,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Scale className="h-8 w-8 text-law-brown-800 dark:text-law-beige-300" />
             <span className="text-xl font-serif font-bold text-law-brown-900 dark:text-law-beige-100">
-              FIKER GETACHEW & ASSOCIATES
+              GEBRU MAHITEM LAW OFFICE
             </span>
           </Link>
         </div>
@@ -69,7 +69,7 @@ export default function Header() {
                   <Link href="/" className="flex items-center space-x-2">
                     <Scale className="h-6 w-6 text-law-brown-800 dark:text-law-beige-300" />
                     <span className="text-lg font-serif font-bold text-law-brown-900 dark:text-law-beige-100">
-                      FIKER GETACHEW & ASSOCIATES
+                      GEBRU MAHITEM LAW OFFICE
                     </span>
                   </Link>
                   <Sheet>

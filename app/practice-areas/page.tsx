@@ -8,8 +8,8 @@ import DynamicBackground from "@/components/dynamic-background"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
-  title: "Practice Areas | Fiker Getachew And Associates Law Office",
-  description: "Explore our diversified areas of expertise providing quality legal services with creative solutions tailored to Ethiopia's legal system.",
+  title: "Practice Areas | Gebru Mahitem Law Office",
+  description: "Explore our specialized legal services including Personal Injury, Criminal Defense, Family Law, and Business Litigation under Ethiopian law.",
 }
 
 export default function PracticeAreasPage() {
@@ -30,8 +30,7 @@ export default function PracticeAreasPage() {
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">Our Diversified Areas of Expertise</h1>
             <p className="body-lg">
-              FGA is the best law office in Ethiopia with diversified areas of expertise. We provide quality legal services with creative solutions
-              tailored to your specific needs within Ethiopia's unique legal framework.
+              We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
             </p>
           </div>
         </div>
@@ -44,8 +43,8 @@ export default function PracticeAreasPage() {
             <span className="badge-law mb-2 inline-block">Our Legal Expertise</span>
             <h2 className="heading-lg mb-4">Comprehensive Legal Services</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Our law office can serve the following and related areas for any clients. We provide quality legal services with creative solutions
-              across a diverse range of practice areas tailored to Ethiopia's legal system and international law.
+              Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
+              We provide international standard local solutions to meet our Client's needs.
             </p>
           </div>
 
@@ -139,16 +138,14 @@ export default function PracticeAreasPage() {
             </div>
             <div>
               <span className="badge-law mb-2 inline-block">Why Choose Us</span>
-              <h2 className="heading-lg mb-4">Quality Legal Services with Creative Solutions</h2>
+              <h2 className="heading-lg mb-4">International Standard Local Solutions</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Fiker Getachew And Associates Law Office (FGA), we combine deep expertise in Ethiopian and international law across diversified practice areas with a client-centered approach that
-                focuses on understanding your unique needs. Our attorneys bring extensive experience to
-                every matter, delivering quality legal services with creative solutions.
+                At Abate Yimer Law Office, we are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
               </p>
               <p className="body-md mb-6">
-                We pride ourselves on our ability to handle complex legal challenges across multiple practice areas,
-                providing comprehensive representation that addresses all aspects of your legal needs in Ethiopia and internationally.
+                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
+                At Abate Yimer Law Office, we strive to provide an international standard local solution to meet our Client's needs.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
@@ -169,10 +166,10 @@ export default function PracticeAreasPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Diversified Expertise</h3>
+                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">European Trained Lawyers</h3>
                     <p className="body-sm">
-                      Our attorneys have diversified areas of expertise, enabling them to
-                      handle complex matters effectively across various legal domains.
+                      Our team includes European trained corporate lawyers with expertise in
+                      project finance, energy and corporate legal matters.
                     </p>
                   </div>
                 </li>
@@ -194,10 +191,10 @@ export default function PracticeAreasPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Creative Solutions</h3>
+                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Catered Solutions</h3>
                     <p className="body-sm">
-                      We provide quality legal services with creative solutions to address multifaceted legal challenges that span
-                      multiple areas of law.
+                      We are committed to providing catered solutions to Client's business and investment ventures in Ethiopia
+                      with a focus on their specific needs.
                     </p>
                   </div>
                 </li>
@@ -219,10 +216,10 @@ export default function PracticeAreasPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Local & International Expertise</h3>
+                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Global Client Base</h3>
                     <p className="body-sm">
-                      Our expertise ranges from local Ethiopian law to international law, allowing us to provide contextually
-                      relevant legal advice for both domestic and international matters.
+                      Our law office advises Clients from different parts of the World, allowing us to understand
+                      diverse business needs and provide appropriate legal solutions.
                     </p>
                   </div>
                 </li>
@@ -244,17 +241,17 @@ export default function PracticeAreasPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Quality Service</h3>
+                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">International Standard</h3>
                     <p className="body-sm">
-                      Our track record of successful outcomes across diversified practice areas demonstrates our ability to provide
-                      quality legal services with creative solutions for our clients.
+                      We strive to provide an international standard local solution to meet our Client's needs
+                      in project finance, energy and corporate legal matters.
                     </p>
                   </div>
                 </li>
               </ul>
               <Link href="/about">
                 <Button className="btn-law">
-                  Learn More About FGA <ArrowRight className="ml-2 h-4 w-4" />
+                  Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
@@ -269,8 +266,8 @@ export default function PracticeAreasPage() {
             <span className="badge-law mb-2 inline-block">Find Your Solution</span>
             <h2 className="heading-lg mb-4">Not Sure Which Practice Area You Need?</h2>
             <p className="body-md max-w-2xl mx-auto">
-              FGA can help you identify the right legal services for your specific situation. Contact us for a
-              consultation to discuss your needs and receive quality legal services with creative solutions.
+              Abate Yimer Law Office can help you identify the right legal services for your specific situation. Contact us for a
+              consultation to discuss your business and investment ventures in Ethiopia.
             </p>
           </div>
 
@@ -284,8 +281,8 @@ export default function PracticeAreasPage() {
                   <div className="flex-1">
                     <h3 className="heading-md mb-2 text-center md:text-left">Schedule a Consultation</h3>
                     <p className="body-md mb-4 text-center md:text-left">
-                      Fiker Getachew And Associates Law Office will help you navigate your legal challenges and identify the right
-                      practice area for your needs with quality legal services and creative solutions.
+                      Abate Yimer Law Office will help you navigate your legal challenges and identify the right
+                      practice area for your business and investment ventures in Ethiopia.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button className="btn-law flex-1">WhatsApp Us</Button>
@@ -337,8 +334,8 @@ export default function PracticeAreasPage() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "The corporate law team at Fiker Getachew And Associates guided our company through a complex merger with precision and
-                  creative solutions. Their expertise in Ethiopian commercial code was invaluable in navigating regulatory challenges and ensuring a
+                  "The corporate law team at Abate Yimer Law Office guided our company through a complex merger with precision and
+                  expertise. Their European trained corporate lawyers provided invaluable guidance in navigating regulatory challenges and ensuring a
                   smooth transaction in Addis Ababa."
                 </p>
               </CardContent>
@@ -361,8 +358,8 @@ export default function PracticeAreasPage() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "Working with the property rights team at Fiker Getachew And Associates has been exceptional. Their thorough understanding
-                  of Ethiopian land lease regulations and creative solutions helped us navigate complex property issues in Addis Ababa and
+                  "Working with the property rights team at Abate Yimer Law Office has been exceptional. Their thorough understanding
+                  of Ethiopian land lease regulations and international standard solutions helped us navigate complex property issues in Addis Ababa and
                   complete our development project on schedule."
                 </p>
               </CardContent>
@@ -385,8 +382,8 @@ export default function PracticeAreasPage() {
                   </div>
                 </div>
                 <p className="body-md italic">
-                  "The intellectual property team at Fiker Getachew And Associates has been instrumental in protecting our innovations in Ethiopia's emerging tech sector.
-                  Their creative solutions to patent and trademark applications under Ethiopian IP law has given our company a significant
+                  "The intellectual property team at Abate Yimer Law Office has been instrumental in protecting our innovations in Ethiopia's emerging tech sector.
+                  Their international standard approach to patent and trademark applications under Ethiopian IP law has given our company a significant
                   competitive advantage in the Ethiopian market."
                 </p>
               </CardContent>
