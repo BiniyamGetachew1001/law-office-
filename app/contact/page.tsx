@@ -377,23 +377,27 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
+      <section className="section-padding">
         <div className="container">
-          <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Find Us</span>
-            <h2 className="heading-lg mb-4">Our Main Office Location</h2>
+          <div className="text-center mb-8">
+            <span className="badge-law mb-2 inline-block">Our Location</span>
+            <h2 className="heading-lg mb-4">Visit Our Office</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Our main office is conveniently located in the heart of the city, easily accessible by public transportation.
+              Gebru Mahitem Law Office<br />
+              Gulele 07 1378 St, Addis Ababa, Ethiopia
             </p>
           </div>
-
-          <div className="rounded-2xl overflow-hidden shadow-xl h-[500px] relative">
-            {/* This would typically be a Google Maps or other map embed */}
-            <div className="absolute inset-0 bg-law-beige-200 dark:bg-law-brown-800 flex items-center justify-center">
-              <p className="body-md text-center p-6">
-                Map embed would go here. For implementation, you would typically use Google Maps API or another mapping service.
-              </p>
-            </div>
+          <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps?q=Gulele+07+1378+St,+Addis+Ababa,+Ethiopia&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Gebru Mahitem Law Office Location"
+            ></iframe>
           </div>
         </div>
       </section>
