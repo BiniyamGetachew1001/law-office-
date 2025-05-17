@@ -1,29 +1,11 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  ArrowRight,
-  Award,
-  BookOpen,
-  Briefcase,
-  CheckCircle,
-  GraduationCap,
-  Heart,
-  Mail,
-  MapPin,
-  Phone,
-  Scale,
-  Users,
-} from "lucide-react"
-import AttorneyProfile from "@/components/attorney-profile"
-import TimelineItem from "@/components/timeline-item"
+import { CheckCircle, Mail, Phone } from "lucide-react"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
   title: "About Us | Gebru Mahitem Law Office",
-  description: "Learn about Gebru Mahitem Law Office, a full-service Ethiopian law firm led by Attorney Gebru Mahitem with 15+ years of courtroom experience.",
+  description: "Learn about Gebru Mahitem Law Office, a professional and experienced law firm based in Addis Ababa, Ethiopia, led by Attorney Gebru Mahitem.",
 }
 
 export default function AboutPage() {
@@ -44,7 +26,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">About Gebru Mahitem Law Office</h1>
             <p className="body-lg">
-              {`Led by Attorney Gebru Mahitem with 15+ years of courtroom experience, we provide compassionate yet aggressive representation in personal injury, criminal defense, and family law matters.`}
+              Gebru Mahitem Law Office is a professional and experienced law firm based in Addis Ababa, Ethiopia, led by Attorney and Consultant at Law, Gebru Mahitem. With over 11 years of legal experience, we are dedicated to providing personalized and effective legal solutions for individuals and businesses. Our focus is on integrity, expertise, and client satisfaction, delivering exceptional legal representation in personal injury, criminal defense, family law, business litigation, and more.
             </p>
           </div>
         </div>
@@ -56,57 +38,27 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="badge-law mb-2 inline-block">Our Mission</span>
-              <h2 className="heading-lg mb-4">Committed to Quality Legal Services</h2>
+              <h2 className="heading-lg mb-4">Dedicated to Your Legal Success</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                At Abate Yimer Law Office, our mission is to provide international standard local solutions to meet our Client's needs.
-                We are committed to providing catered solutions to Client's business and investment ventures in Ethiopia while maintaining
-                the highest standards of integrity, professionalism, and client service.
+                Our mission is to provide reliable, trustworthy, and effective legal services tailored to each client’s needs. We strive to advocate for your rights and protect your best interests, whether you are facing a personal or business legal challenge.
               </p>
-              <p className="body-md mb-6">
-                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance,
-                energy and corporate legal matters. We believe that effective legal representation requires both local expertise and international
-                perspective.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <Card className="law-card">
-                  <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Quality Service</h3>
-                    <p className="body-sm">
-                      We strive for excellence in every aspect of our practice, providing quality legal services with creative solutions
-                      that respect Ethiopian cultural contexts.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="law-card">
-                  <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Integrity</h3>
-                    <p className="body-sm">
-                      We uphold the highest ethical standards and maintain transparency in all client relationships.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="law-card">
-                  <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Creative Solutions</h3>
-                    <p className="body-sm">
-                      We embrace innovative approaches to legal challenges within Ethiopia's evolving legal system, finding creative solutions for complex
-                      issues that respect both Ethiopian and international legal principles.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="law-card">
-                  <CardContent className="pt-6">
-                    <h3 className="heading-sm mb-2">Dedication</h3>
-                    <p className="body-sm">
-                      We are dedicated to achieving the best possible outcomes for our clients through tireless
-                      advocacy.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Personalized legal solutions for every client</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Commitment to integrity and client satisfaction</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Expertise in Ethiopian and international law</span>
+                </li>
+              </ul>
             </div>
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src={ethiopianImages.justiceMinistry}
                 alt="Ethiopian Ministry of Justice"
@@ -118,478 +70,79 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* History Timeline Section */}
+      {/* Attorney Profile Section */}
       <section className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Our History</span>
-            <h2 className="heading-lg mb-4">Experienced Legal Professionals</h2>
+            <span className="badge-law mb-2 inline-block">Attorney Profile</span>
+            <h2 className="heading-lg mb-4">Meet Gebru Mahitem</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Abate Yimer Law Office has established itself as a highly experienced group of legal professionals with European trained corporate lawyers
-              committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
+              Attorney and Consultant at Law | Self-employed | Addis Ababa, Ethiopia
             </p>
           </div>
-
-          <div className="relative max-w-4xl mx-auto">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-law-beige-300 dark:bg-law-brown-700"></div>
-
-            {/* Timeline Items */}
-            <div className="space-y-16">
-              <TimelineItem
-                year="2015"
-                title="Founding of Abate Yimer Law Office"
-                description="Established in Addis Ababa by Abate Yimer with a focus on providing international standard local solutions to meet our Client's needs in Ethiopia."
-                icon={<Scale className="h-6 w-6" />}
-              />
-
-              <TimelineItem
-                year="2017"
-                title="Expansion of Practice Areas"
-                description="Added specialized departments for intellectual property, immigration, and tax issues to meet growing client needs in Ethiopia's developing economy."
-                icon={<Briefcase className="h-6 w-6" />}
-                position="right"
-              />
-
-              <TimelineItem
-                year="2019"
-                title="New Headquarters"
-                description="Moved to our current location on Bole Road in the heart of Addis Ababa's business district to accommodate our growing team of specialized attorneys."
-                icon={<MapPin className="h-6 w-6" />}
-              />
-
-              <TimelineItem
-                year="2020"
-                title="International Partnerships"
-                description="Established partnerships with international law firms to better serve clients with cross-border legal needs and expand our expertise in international law."
-                icon={<Users className="h-6 w-6" />}
-                position="right"
-              />
-
-              <TimelineItem
-                year="2021"
-                title="Digital Transformation"
-                description="Implemented digital solutions to enhance client service delivery and address emerging legal challenges in Ethiopia's growing tech sector."
-                icon={<BookOpen className="h-6 w-6" />}
-              />
-
-              <TimelineItem
-                year="2022"
-                title="Community Legal Aid Program"
-                description="Launched a formal community legal aid program, committing to provide quality legal services with creative solutions to underrepresented communities throughout Ethiopia."
-                icon={<Heart className="h-6 w-6" />}
-                position="right"
-              />
-
-              <TimelineItem
-                year="2023"
-                title="Expansion of Service Areas"
-                description="Added specialized services in energy law, PPP procurement, and information technology to further diversify our areas of expertise and provide comprehensive legal solutions."
-                icon={<Award className="h-6 w-6" />}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Our Attorneys Section */}
-      <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
-        <div className="container">
-          <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Our Legal Team</span>
-            <h2 className="heading-lg mb-4">Meet Our Attorneys</h2>
-            <p className="body-md max-w-2xl mx-auto">
-              Our team of experienced attorneys brings together diverse expertise in Ethiopian and international law, providing quality legal services with creative solutions.
-            </p>
-          </div>
-
-          <Tabs defaultValue="partners" className="w-full">
-            <div className="flex justify-center mb-8">
-              <TabsList className="bg-law-beige-200 dark:bg-law-brown-800">
-                <TabsTrigger
-                  value="partners"
-                  className="data-[state=active]:bg-law-beige-500 dark:data-[state=active]:bg-law-brown-700"
-                >
-                  Partners
-                </TabsTrigger>
-                <TabsTrigger
-                  value="associates"
-                  className="data-[state=active]:bg-law-beige-500 dark:data-[state=active]:bg-law-brown-700"
-                >
-                  Associates
-                </TabsTrigger>
-                <TabsTrigger
-                  value="of-counsel"
-                  className="data-[state=active]:bg-law-beige-500 dark:data-[state=active]:bg-law-brown-700"
-                >
-                  Of Counsel
-                </TabsTrigger>
-              </TabsList>
-            </div>
-
-            <TabsContent value="partners" className="mt-0">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <AttorneyProfile
-                  name="Fiker Getachew"
-                  title="Founding Partner"
-                  image={ethiopianImages.attorney1}
-                  specialties={["Corporate & Business Law", "Litigation & Representation", "Property Rights"]}
-                  education={["LL.B., Addis Ababa University", "LL.M., Harvard Law School"]}
-                  bio="Fiker Getachew is the founder of FGA Law Office, with extensive experience in Ethiopian and international law. She is recognized for providing quality legal services with creative solutions across diversified areas of expertise."
-                  email="fiker@fgalawoffice.com"
-                  phone="+251 911 992 719"
-                />
-
-                <AttorneyProfile
-                  name="Abebe Kebede"
-                  title="Senior Partner"
-                  image={ethiopianImages.attorney2}
-                  specialties={["Property Rights", "Investment & Licensing", "PPP Procurement"]}
-                  education={["LL.B., Addis Ababa University", "LL.M., Oxford University"]}
-                  bio="Abebe specializes in complex property transactions and investment matters. His expertise in navigating Ethiopia's unique land lease system and procurement regulations has made him a trusted advisor to major developers and investors."
-                  email="abebe@fgalawoffice.com"
-                  phone="+251 911 992 719"
-                />
-
-                <AttorneyProfile
-                  name="Tigist Haile"
-                  title="Senior Associate"
-                  image={ethiopianImages.attorney3}
-                  specialties={["Litigation & Representation", "Family Law", "Criminal Cases"]}
-                  education={["LL.B., Addis Ababa University", "LL.M., University of Cape Town"]}
-                  bio="Tigist leads our litigation practice and has successfully represented clients in high-stakes disputes before Ethiopian federal and regional courts. Her strategic approach and creative solutions have resulted in numerous favorable outcomes."
-                  email="tigist@fgalawoffice.com"
-                  phone="+251 911 992 719"
-                />
-
-                <AttorneyProfile
-                  name="Sarah Johnson"
-                  title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Intellectual Property", "Technology Law"]}
-                  education={["J.D., New York University", "M.S., MIT", "B.S., Cornell University"]}
-                  bio="Sarah leads our intellectual property practice, combining her legal expertise with a background in computer science. She has helped numerous technology companies protect and leverage their IP assets."
-                  email="s.johnson@prestigelaw.com"
-                  phone="(212) 555-1004"
-                />
-
-                <AttorneyProfile
-                  name="David Thompson"
-                  title="Senior Partner"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Tax Law", "Estate Planning"]}
-                  education={["J.D., Georgetown University", "LL.M. in Taxation, NYU", "B.A., Dartmouth College"]}
-                  bio="David specializes in tax planning for high-net-worth individuals and corporations. His strategic approach to tax matters has helped clients navigate complex regulations while optimizing their tax positions."
-                  email="d.thompson@prestigelaw.com"
-                  phone="(212) 555-1005"
-                />
-
-                <AttorneyProfile
-                  name="Jennifer Lee"
-                  title="Partner"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Employment Law", "Labor Relations"]}
-                  education={["J.D., University of Chicago", "B.A., Northwestern University"]}
-                  bio="Jennifer represents employers in all aspects of employment law, from compliance matters to litigation. She is known for her practical approach to workplace issues and proactive risk management strategies."
-                  email="j.lee@prestigelaw.com"
-                  phone="(212) 555-1006"
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="associates" className="mt-0">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <AttorneyProfile
-                  name="Robert Wilson"
-                  title="Senior Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Corporate Law", "Securities"]}
-                  education={["J.D., Columbia Law School", "B.A., Princeton University"]}
-                  bio="Robert focuses on securities offerings and corporate governance matters. He has advised clients on numerous public and private offerings and SEC compliance issues."
-                  email="r.wilson@prestigelaw.com"
-                  phone="(212) 555-1007"
-                />
-
-                <AttorneyProfile
-                  name="Sophia Martinez"
-                  title="Senior Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Litigation", "White Collar Defense"]}
-                  education={["J.D., Yale Law School", "B.A., Brown University"]}
-                  bio="Sophia specializes in complex commercial litigation and white-collar defense. She has represented clients in federal and state courts across a wide range of industries."
-                  email="s.martinez@prestigelaw.com"
-                  phone="(212) 555-1008"
-                />
-
-                <AttorneyProfile
-                  name="Daniel Kim"
-                  title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Intellectual Property", "Technology Transactions"]}
-                  education={["J.D., Berkeley Law", "B.S., Stanford University"]}
-                  bio="Daniel focuses on technology transactions and IP licensing. His background in computer science provides valuable insights for clients in the technology sector."
-                  email="d.kim@prestigelaw.com"
-                  phone="(212) 555-1009"
-                />
-
-                <AttorneyProfile
-                  name="Emily Patel"
-                  title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Real Estate", "Land Use"]}
-                  education={["J.D., Georgetown University", "B.A., Emory University"]}
-                  bio="Emily specializes in real estate transactions and land use matters. She has assisted clients with acquisitions, development projects, and zoning issues across the region."
-                  email="e.patel@prestigelaw.com"
-                  phone="(212) 555-1010"
-                />
-
-                <AttorneyProfile
-                  name="Thomas Wright"
-                  title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Tax Law", "Corporate Restructuring"]}
-                  education={["J.D., University of Virginia", "B.S., University of North Carolina"]}
-                  bio="Thomas advises clients on tax matters related to corporate transactions and restructurings. His analytical approach helps clients navigate complex tax implications."
-                  email="t.wright@prestigelaw.com"
-                  phone="(212) 555-1011"
-                />
-
-                <AttorneyProfile
-                  name="Olivia Garcia"
-                  title="Associate"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Employment Law", "Compliance"]}
-                  education={["J.D., UCLA School of Law", "B.A., UC San Diego"]}
-                  bio="Olivia focuses on employment compliance and workplace investigations. She helps employers develop policies and practices that mitigate legal risks while fostering positive workplace cultures."
-                  email="o.garcia@prestigelaw.com"
-                  phone="(212) 555-1012"
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="of-counsel" className="mt-0">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <AttorneyProfile
-                  name="Richard Bennett"
-                  title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Corporate Law", "International Business"]}
-                  education={["J.D., Harvard Law School", "M.B.A., Harvard Business School", "B.A., Dartmouth College"]}
-                  bio="Richard brings decades of experience in international business transactions. Before joining Prestige Law, he served as general counsel for a Fortune 100 company, overseeing legal matters across global operations."
-                  email="r.bennett@prestigelaw.com"
-                  phone="(212) 555-1013"
-                />
-
-                <AttorneyProfile
-                  name="Margaret Wu"
-                  title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Intellectual Property", "Patent Law"]}
-                  education={["J.D., Stanford Law School", "Ph.D., Electrical Engineering, MIT", "B.S., Caltech"]}
-                  bio="Margaret specializes in patent law with a focus on electronics and software. Her technical background and legal expertise make her an invaluable resource for technology clients seeking to protect their innovations."
-                  email="m.wu@prestigelaw.com"
-                  phone="(212) 555-1014"
-                />
-
-                <AttorneyProfile
-                  name="Jonathan Brooks"
-                  title="Of Counsel"
-                  image="/placeholder.svg?height=300&width=300"
-                  specialties={["Environmental Law", "Regulatory Compliance"]}
-                  education={[
-                    "J.D., Yale Law School",
-                    "M.S., Environmental Science, Duke University",
-                    "B.A., Williams College",
-                  ]}
-                  bio="Jonathan advises clients on environmental compliance and regulatory matters. His experience includes serving as a senior attorney at the EPA, giving him unique insights into regulatory processes and enforcement."
-                  email="j.brooks@prestigelaw.com"
-                  phone="(212) 555-1015"
-                />
-              </div>
-            </TabsContent>
-          </Tabs>
-
-          <div className="text-center mt-12">
-            <Link href="/attorneys">
-              <Button className="btn-law">
-                View All Attorneys <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Service Section */}
-      <section className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 bg-law-beige-100/50 dark:bg-law-brown-800/30"></div>
-        <div className="container relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl h-[350px] relative">
               <Image
-                src={ethiopianImages.clientMeeting}
-                alt="Ethiopian lawyer with client"
+                src={ethiopianImages.attorney1}
+                alt="Gebru Mahitem"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <span className="badge-law mb-2 inline-block">Client Service</span>
-              <h2 className="heading-lg mb-4">Our Commitment to You</h2>
-              <div className="divider w-24 my-6"></div>
-              <p className="body-md mb-6">
-                At Abate Yimer Law Office, we believe that exceptional legal representation begins with understanding our clients'
-                business and investment ventures in Ethiopia. We are committed to providing catered solutions
-                throughout every stage of your legal matter.
-              </p>
-              <p className="body-md mb-6">
-                Our client-centered approach means that we take the time to listen, explain complex legal concepts in
-                clear terms, and keep you informed about developments in your case. We strive to provide an international standard local solution
-                to meet our Client's needs while building strong reputation in project finance, energy and corporate legal matters.
-              </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Responsive Communication</h3>
-                    <p className="body-sm">
-                      We prioritize prompt responses to client inquiries and regular updates on case progress.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Transparent Billing</h3>
-                    <p className="body-sm">
-                      Our billing practices are clear and transparent, with detailed invoices and no unexpected charges.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Strategic Approach</h3>
-                    <p className="body-sm">
-                      We develop tailored legal strategies aligned with your specific goals and circumstances.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Collaborative Teamwork</h3>
-                    <p className="body-sm">
-                      Our attorneys collaborate across practice areas to provide comprehensive solutions to complex
-                      legal challenges.
-                    </p>
-                  </div>
-                </li>
+              <h3 className="heading-md mb-2">Professional Experience</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li><strong>Attorney and Consultant at Law, Self-employed</strong> (May 2023 - Current)</li>
+                <li><strong>Attorney At Law, Self-employed</strong> (Jul 2023 - Current)</li>
+                <li><strong>Senior Lawyer, FDRE Ministry of Justice</strong> (Jan 2014 - Jun 2023)</li>
               </ul>
-              <Link href="/contact">
-                <Button className="btn-law">
-                  Contact Us Today <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <h3 className="heading-md mb-2">Education</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li>Bachelor of Laws (LLB), Bahir Dar University</li>
+                <li>Master of Laws (LLM), Vrije Universiteit Amsterdam (VU Amsterdam) & Bahir Dar University School of Law</li>
+              </ul>
+              <h3 className="heading-md mb-2">Contact Information</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li><strong>Address:</strong> Gulele 07 1378 St, Addis Ababa, Ethiopia</li>
+                <li><strong>Contact Number:</strong> 0940349840</li>
+                <li><strong>Mobile Phone:</strong> 0905048804</li>
+                <li><strong>Website:</strong> <a href="https://www.tiktok.com/@gebru.mahitem" target="_blank" rel="noopener noreferrer">www.tiktok.com/@gebru.mahitem</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Community Involvement Section */}
+      {/* Office Info Section */}
       <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
         <div className="container">
           <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Community Impact</span>
-            <h2 className="heading-lg mb-4">Our Commitment to Community</h2>
+            <span className="badge-law mb-2 inline-block">About Our Office</span>
+            <h2 className="heading-lg mb-4">Gebru Mahitem Law Office</h2>
             <p className="body-md max-w-2xl mx-auto">
-              We believe in giving back to the communities where we live and work through pro bono service, charitable
-              initiatives, and civic engagement.
+              Located in Addis Ababa, we serve clients with a focus on integrity, expertise, and client satisfaction. Our office is committed to providing reliable and trustworthy legal services you can depend on.
             </p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="law-card hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.proBono}
-                  alt="Ethiopian legal aid"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-                <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-serif font-bold text-white">Pro Bono Program</h3>
-                </div>
-              </div>
-              <CardContent className="pt-6">
-                <p className="body-md mb-4">
-                  Our attorneys dedicate over 2,500 hours annually to pro bono work, providing legal services to
-                  underserved individuals and nonprofit organizations.
-                </p>
-                <div className="flex items-center text-law-beige-500 dark:text-law-brown-500">
-                  <Heart className="h-5 w-5 mr-2" />
-                  <span className="font-medium">5% of practice dedicated to pro bono</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.communityService}
-                  alt="Ethiopian community outreach"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-                <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-serif font-bold text-white">Community Partnerships</h3>
-                </div>
-              </div>
-              <CardContent className="pt-6">
-                <p className="body-md mb-4">
-                  We partner with local organizations to address community needs through volunteer service, financial
-                  support, and legal education initiatives.
-                </p>
-                <div className="flex items-center text-law-beige-500 dark:text-law-brown-500">
-                  <Users className="h-5 w-5 mr-2" />
-                  <span className="font-medium">12 active community partnerships</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card hover-lift">
-              <div className="relative h-48">
-                <Image
-                  src={ethiopianImages.legalEducation}
-                  alt="Ethiopian legal workshop"
-                  fill
-                  className="object-cover"
-                />
-                <div className="img-overlay"></div>
-                <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-serif font-bold text-white">Legal Education</h3>
-                </div>
-              </div>
-              <CardContent className="pt-6">
-                <p className="body-md mb-4">
-                  We conduct workshops and seminars to improve legal literacy and provide mentorship to aspiring
-                  attorneys from diverse backgrounds.
-                </p>
-                <div className="flex items-center text-law-beige-500 dark:text-law-brown-500">
-                  <GraduationCap className="h-5 w-5 mr-2" />
-                  <span className="font-medium">20+ educational events annually</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link href="/community-impact">
-              <Button className="btn-law">
-                Learn More About Our Impact <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-white dark:bg-law-brown-800 p-6 rounded-lg shadow-md">
+              <h3 className="heading-md mb-2">Company Description</h3>
+              <p className="body-md mb-4">
+                Gebru Mahitem is a professional and experienced lawyer offering a wide range of legal services to individuals and businesses. He is a dedicated attorney committed to providing personalized and effective legal solutions to meet clients' needs. With a focus on integrity, expertise, and client satisfaction, he strives to deliver exceptional legal representation and guidance. Whether you are facing a personal injury, criminal defense, family law, or business litigation matter, he is here to advocate for your rights and protect your best interests. You can trust that he will provide reliable and trustworthy legal services that you can depend on.
+              </p>
+              <ul className="body-md space-y-2">
+                <li><strong>Employees:</strong> 1-5</li>
+                <li><strong>Peers at other companies:</strong> Bereket Ayele, Mesay Tedla</li>
+              </ul>
+            </div>
+            <div className="bg-white dark:bg-law-brown-800 p-6 rounded-lg shadow-md">
+              <h3 className="heading-md mb-2">Quick Facts</h3>
+              <ul className="body-md space-y-2">
+                <li><strong>Total experience as Attorney and Consultant at Law:</strong> 2 years</li>
+                <li><strong>Minimum period of employment in companies:</strong> 9 years 5 months</li>
+                <li><strong>Average duration of employment:</strong> 9 years 5 months</li>
+                <li><strong>Positions held:</strong> Attorney At Law, Senior Lawyer</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -607,10 +160,9 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-lg mb-6 text-white">Ready to Work With Our Team?</h2>
+            <h2 className="heading-lg mb-6 text-white">Ready to Work With Gebru Mahitem?</h2>
             <p className="body-lg mb-8 text-law-beige-100">
-              Contact us today to schedule a consultation with one of our experienced attorneys. We look forward to
-              learning about your legal needs and how we can help.
+              Contact us today to schedule a consultation and discuss how we can help you navigate your legal challenges and achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="btn-law bg-white text-law-brown-900 hover:bg-law-beige-100 dark:bg-law-beige-100 dark:text-law-brown-900 dark:hover:bg-law-beige-200">
@@ -625,6 +177,18 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-law-brown-900 text-white py-6">
+        <div className="container text-center">
+          <p className="body-md">
+            GEBRU MAHITEM LAW OFFICE
+          </p>
+          <p className="body-md">
+            Established in 2022, located in Addis Ababa, Ethiopia.
+          </p>
+        </div>
+      </footer>
     </>
   )
 }

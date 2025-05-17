@@ -119,8 +119,7 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <h1 className="heading-xl mb-6">Contact Abate Yimer Law Office</h1>
             <p className="body-lg">
-              We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
-              Reach out today to schedule a consultation or discuss your legal needs with our experienced team.
+              We are a highly experienced group of legal professionals led by Gebru Mahitem, committed to providing catered solutions to clients' legal needs in Ethiopia. Reach out today to schedule a consultation or discuss your legal needs with our experienced team.
             </p>
           </div>
         </div>
@@ -140,7 +139,7 @@ export default function ContactPage() {
                 promptly to discuss your needs and provide quality legal services with creative solutions.
               </p>
               <p className="body-md mb-8">
-                For immediate assistance, you can also call or WhatsApp us at <a href="tel:+251911992719" className="text-law-beige-500 dark:text-law-brown-500 font-medium">+251 911 992 719</a>.
+                For immediate assistance, you can also call us at <a href="tel:+251940349840" className="text-law-beige-500 dark:text-law-brown-500 font-medium">0940349840</a> or <a href="tel:+251905048804" className="text-law-beige-500 dark:text-law-brown-500 font-medium">0905048804</a>.
               </p>
 
               <div className="space-y-6 mb-8">

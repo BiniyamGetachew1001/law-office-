@@ -17,27 +17,33 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    default: "Abate Yimer Law Office | Professional Ethiopian Legal Services",
-    template: "%s | Abate Yimer Law Office",
+    default: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+    template: "%s | Gebru Mahitem Law Office",
+    description: "Professional legal services in Ethiopia specializing in corporate law, litigation, property rights, and more. Led by Attorney Gebru Mahitem with 11+ years of experience.",
+    keywords: ["Ethiopian lawyer", "Addis Ababa attorney", "corporate law", "litigation", "property rights", "Ethiopian legal consultation", "Gebru Mahitem Law Office", "project finance", "energy law", "corporate law"],
+    authors: [{ name: "Gebru Mahitem Law Office" }],
+    creator: "Gebru Mahitem Law Office",
+    publisher: "Gebru Mahitem Law Office",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    openGraph: {
+      title: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+      description: "Professional legal services in Ethiopia specializing in corporate law, litigation, property rights, and more. Led by Attorney Gebru Mahitem with 11+ years of experience.",
+      url: "https://gebru-mahitem-law.com",
+      siteName: "Gebru Mahitem Law Office",
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Gebru Mahitem Law Office | Professional Ethiopian Legal Services",
+      description: "Professional legal services in Ethiopia specializing in corporate law, litigation, property rights, and more. Led by Attorney Gebru Mahitem with 11+ years of experience.",
+    },
   },
-  description: "We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.",
-  keywords: ["Ethiopian law firm", "legal services in Ethiopia", "Ethiopian attorneys", "Addis Ababa lawyers", "Ethiopian legal consultation", "Abate Yimer Law Office", "project finance", "energy law", "corporate law"],
-  authors: [{ name: "Abate Yimer Law Office" }],
-  creator: "Abate Yimer Law Office",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://www.abateyimerlaw.com",
-    title: "Abate Yimer Law Office | Professional Ethiopian Legal Services",
-    description: "We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.",
-    siteName: "Abate Yimer Law Office",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Abate Yimer Law Office | Professional Ethiopian Legal Services",
-    description: "We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.",
-  },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -25,7 +25,7 @@ export default function Home() {
             <span className="badge-law mb-4 inline-block fade-in">Professional Ethiopian Legal Services</span>
             <h1 className="heading-xl mb-6 fade-in fade-in-delay-1">Gebru Mahitem Law Office</h1>
             <p className="body-lg mb-8 fade-in fade-in-delay-2">
-              {`Established in 2015, we are a full-service Ethiopian law firm specializing in personal injury, criminal defense, and family law. Led by Attorney Gebru Mahitem with 15+ years of courtroom experience, we provide compassionate yet aggressive representation.`}
+              {`Led by Attorney Gebru Mahitem with 11+ years of experience, including 9 years as a Senior Lawyer at FDRE Ministry of Justice. We provide comprehensive legal services with a focus on integrity, expertise, and client satisfaction.`}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 fade-in fade-in-delay-3">
               <Button className="btn-law">Schedule a Consultation</Button>
@@ -204,27 +204,26 @@ export default function Home() {
               <h2 className="heading-lg mb-4">Your Trusted Legal Partner in Addis Ababa</h2>
               <div className="divider w-24 my-6"></div>
               <p className="body-md mb-6">
-                Established in 2022, Gebru Mahitem Law Office is a dedicated legal practice located in the heart of Addis Ababa, Ethiopia. Led by Attorney and Consultant at Law, Gebru Mahitem, who brings over 11 years of legal experience, the firm offers a wide range of legal services tailored to meet the needs of individuals and businesses alike.
+                Gebru Mahitem Law Office is a professional legal practice located in Gulele, Addis Ababa, Ethiopia. Led by Attorney and Consultant at Law, Gebru Mahitem, who brings over 11 years of legal experience, including 9 years as a Senior Lawyer at FDRE Ministry of Justice and advanced education from Bahir Dar University and Vrije Universiteit Amsterdam.
               </p>
               <p className="body-md mb-6">
-                With a commitment to integrity, expertise, and client satisfaction, we strive to provide personalized and effective legal solutions.
+                With a commitment to integrity, expertise, and client satisfaction, we strive to provide personalized and effective legal solutions to meet our clients' needs.
               </p>
               <p className="body-md mb-6">
-                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
-                At Abate Yimer Law Office, we strive to provide an international standard local solution to meet our Client's needs.
+                Our law office offers a wide range of legal services to individuals and businesses, with a focus on delivering exceptional legal representation and guidance. Whether you are facing a personal injury, criminal defense, family law, or business litigation matter, we are here to advocate for your rights and protect your best interests.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">European trained corporate lawyers with expertise in Ethiopian and international law</span>
+                  <span className="body-md">11+ years of legal experience in Ethiopian law</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">Specialized in project finance, energy and corporate legal matters</span>
+                  <span className="body-md">Advanced education from Bahir Dar University and VU Amsterdam</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
-                  <span className="body-md">International standard local solutions to meet our Client's needs</span>
+                  <span className="body-md">Personalized and effective legal solutions for all clients</span>
                 </li>
               </ul>
               <Link href="/about">
@@ -413,23 +412,16 @@ export default function Home() {
             <span className="badge-law mb-2 inline-block">Get Started</span>
             <h2 className="heading-lg mb-6">Schedule Your Consultation Today</h2>
             <p className="body-lg mb-8">
-              Abate Yimer Law Office is ready to help you with our highly experienced group of legal professionals.
-              We strive to provide an international standard local solution to meet our Client's needs in project finance, energy and corporate legal matters.
-              Contact us today to schedule a consultation.
+              Gebru Mahitem Law Office is ready to help you with our professional legal services. Contact us today to schedule a consultation at our office in Gulele, Addis Ababa, or reach us by phone at 0940349840 or 0905048804.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="btn-law">
                 <Phone className="mr-2 h-4 w-4" />
-                Call +251 911 992 719
+                Call 0940349840
               </Button>
               <Button className="btn-law-outline">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 h-4 w-4">
-                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                  <path d="M13.5 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                  <path d="M9 13.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5Z" />
-                </svg>
-                WhatsApp Us
+                <Phone className="mr-2 h-4 w-4" />
+                Call 0905048804
               </Button>
             </div>
           </div>

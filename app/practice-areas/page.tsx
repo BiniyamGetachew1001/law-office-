@@ -1,15 +1,11 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Search } from "lucide-react"
-import PracticeAreaCard from "@/components/practice-area-card"
-import DynamicBackground from "@/components/dynamic-background"
+import { CheckCircle, Mail, Phone } from "lucide-react"
 import { ethiopianImages } from "@/data/ethiopian-images"
 
 export const metadata = {
   title: "Practice Areas | Gebru Mahitem Law Office",
-  description: "Explore our specialized legal services including Personal Injury, Criminal Defense, Family Law, and Business Litigation under Ethiopian law.",
+  description: "Explore the various practice areas offered by Gebru Mahitem Law Office, a professional and experienced law firm based in Addis Ababa, Ethiopia.",
 }
 
 export default function PracticeAreasPage() {
@@ -17,399 +13,180 @@ export default function PracticeAreasPage() {
     <>
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
-        <DynamicBackground variant="gradient" intensity="light" className="absolute inset-0" />
+        <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-20"></div>
         <div className="absolute inset-0">
           <Image
             src={ethiopianImages.practiceAreasHero}
-            alt="Ethiopian legal practice"
+            alt="Ethiopian-themed background"
             fill
-            className="object-cover opacity-20 dark:opacity-10"
+            className="object-cover opacity-30 dark:opacity-20"
           />
         </div>
         <div className="container relative z-10 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
-            <h1 className="heading-xl mb-6">Our Diversified Areas of Expertise</h1>
+            <h1 className="heading-xl mb-6">Our Practice Areas</h1>
             <p className="body-lg">
-              We are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
+              At Gebru Mahitem Law Office, we offer a wide range of legal services to individuals and businesses. Our practice areas include personal injury, criminal defense, family law, business litigation, and more. We are dedicated to providing personalized and effective legal solutions to meet our clients' needs.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Practice Areas Overview */}
+      {/* Practice Areas Section */}
       <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
         <div className="container">
-          <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Our Legal Expertise</span>
-            <h2 className="heading-lg mb-4">Comprehensive Legal Services</h2>
-            <p className="body-md max-w-2xl mx-auto">
-              Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
-              We provide international standard local solutions to meet our Client's needs.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <PracticeAreaCard
-              title="Corporate & Business"
-              description="Investment, company registration & licensing. Mergers, acquisitions & sales of companies."
-              icon="Briefcase"
-              image={ethiopianImages.corporateLaw}
-              link="/practice-areas/corporate-law"
-            />
-
-            <PracticeAreaCard
-              title="Litigation & Representation"
-              description="Strategic representation in civil and criminal cases, with a proven track record of successful outcomes in Ethiopian courts."
-              icon="Scale"
-              image={ethiopianImages.litigation}
-              link="/practice-areas/litigation"
-            />
-
-            <PracticeAreaCard
-              title="Property Rights"
-              description="Expert guidance through property transactions, land lease regulations, and property rights disputes under Ethiopian law."
-              icon="Building"
-              image={ethiopianImages.realEstate}
-              link="/practice-areas/property-rights"
-            />
-
-            <PracticeAreaCard
-              title="Intellectual Property"
-              description="Protection and enforcement of patents, trademarks, copyrights, and other intellectual property rights in Ethiopia."
-              icon="FileText"
-              image={ethiopianImages.intellectualProperty}
-              link="/practice-areas/intellectual-property"
-            />
-
-            <PracticeAreaCard
-              title="Employment Issues"
-              description="Representation for both employers and employees in workplace disputes, compliance matters, and employment contracts."
-              icon="Users"
-              image={ethiopianImages.employmentLaw}
-              link="/practice-areas/employment-issues"
-            />
-
-            <PracticeAreaCard
-              title="Tax Issues"
-              description="Strategic tax planning and resolution of tax controversies for individuals and businesses under Ethiopian tax regulations."
-              icon="Calculator"
-              image={ethiopianImages.taxLaw}
-              link="/practice-areas/tax-issues"
-            />
-
-            <PracticeAreaCard
-              title="Family Issues"
-              description="Compassionate guidance through divorce, child custody, inheritance, and other family legal matters under Ethiopian family law."
-              icon="Heart"
-              image={ethiopianImages.familyLaw}
-              link="/practice-areas/family-issues"
-            />
-
-            <PracticeAreaCard
-              title="Legal Document Preparation"
-              description="Comprehensive legal document preparation services, including contracts, agreements, and other legal documents."
-              icon="FileSignature"
-              image={ethiopianImages.estatePlanning}
-              link="/practice-areas/legal-documents"
-            />
-
-            <PracticeAreaCard
-              title="PPP & Procurement"
-              description="Strategic guidance through public-private partnership (PPP) procurement processes and government contracts."
-              icon="GitMerge"
-              image={ethiopianImages.mergersAcquisitions}
-              link="/practice-areas/ppp-procurement"
-            />
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="badge-law mb-2 inline-block">Our Practice Areas</span>
+              <h2 className="heading-lg mb-4">Comprehensive Legal Services</h2>
+              <div className="divider w-24 my-6"></div>
+              <p className="body-md mb-6">
+                Our practice areas are designed to cover a wide range of legal needs. We strive to provide reliable, trustworthy, and effective legal services tailored to each client’s needs. Whether you are facing a personal or business legal challenge, we are here to advocate for your rights and protect your best interests.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Personalized legal solutions for every client</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Commitment to integrity and client satisfaction</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 mr-2 text-law-beige-500 dark:text-law-brown-500 shrink-0 mt-0.5" />
+                  <span className="body-md">Expertise in Ethiopian and international law</span>
+                </li>
+              </ul>
+            </div>
+            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={ethiopianImages.justiceMinistry}
+                alt="Ethiopian Ministry of Justice"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Attorney Profile Section */}
       <section className="section-padding">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
+          <div className="text-center mb-12">
+            <span className="badge-law mb-2 inline-block">Attorney Profile</span>
+            <h2 className="heading-lg mb-4">Meet Gebru Mahitem</h2>
+            <p className="body-md max-w-2xl mx-auto">
+              Attorney and Consultant at Law | Self-employed | Addis Ababa, Ethiopia
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-xl h-[350px] relative">
               <Image
-                src={ethiopianImages.attorneys}
-                alt="Attorneys in meeting"
+                src={ethiopianImages.attorney1}
+                alt="Gebru Mahitem"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <span className="badge-law mb-2 inline-block">Why Choose Us</span>
-              <h2 className="heading-lg mb-4">International Standard Local Solutions</h2>
-              <div className="divider w-24 my-6"></div>
-              <p className="body-md mb-6">
-                At Abate Yimer Law Office, we are a highly experienced group of legal professionals with European trained corporate lawyers committed to providing catered solutions to Client's business and investment ventures in Ethiopia.
-              </p>
-              <p className="body-md mb-6">
-                Our law office advises Clients from different parts of the World and we strive to build strong reputation in project finance, energy and corporate legal matters.
-                At Abate Yimer Law Office, we strive to provide an international standard local solution to meet our Client's needs.
-              </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <div className="rounded-full bg-law-beige-200 dark:bg-law-brown-800 p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-law-beige-500 dark:text-law-brown-500"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">European Trained Lawyers</h3>
-                    <p className="body-sm">
-                      Our team includes European trained corporate lawyers with expertise in
-                      project finance, energy and corporate legal matters.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="rounded-full bg-law-beige-200 dark:bg-law-brown-800 p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-law-beige-500 dark:text-law-brown-500"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Catered Solutions</h3>
-                    <p className="body-sm">
-                      We are committed to providing catered solutions to Client's business and investment ventures in Ethiopia
-                      with a focus on their specific needs.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="rounded-full bg-law-beige-200 dark:bg-law-brown-800 p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-law-beige-500 dark:text-law-brown-500"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">Global Client Base</h3>
-                    <p className="body-sm">
-                      Our law office advises Clients from different parts of the World, allowing us to understand
-                      diverse business needs and provide appropriate legal solutions.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="rounded-full bg-law-beige-200 dark:bg-law-brown-800 p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-law-beige-500 dark:text-law-brown-500"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-law-brown-900 dark:text-law-beige-100">International Standard</h3>
-                    <p className="body-sm">
-                      We strive to provide an international standard local solution to meet our Client's needs
-                      in project finance, energy and corporate legal matters.
-                    </p>
-                  </div>
-                </li>
+              <h3 className="heading-md mb-2">Professional Experience</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li><strong>Attorney and Consultant at Law, Self-employed</strong> (May 2023 - Current)</li>
+                <li><strong>Attorney At Law, Self-employed</strong> (Jul 2023 - Current)</li>
+                <li><strong>Senior Lawyer, FDRE Ministry of Justice</strong> (Jan 2014 - Jun 2023)</li>
               </ul>
-              <Link href="/about">
-                <Button className="btn-law">
-                  Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <h3 className="heading-md mb-2">Education</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li>Bachelor of Laws (LLB), Bahir Dar University</li>
+                <li>Master of Laws (LLM), Vrije Universiteit Amsterdam (VU Amsterdam) & Bahir Dar University School of Law</li>
+              </ul>
+              <h3 className="heading-md mb-2">Contact Information</h3>
+              <ul className="body-md space-y-2 mb-4">
+                <li><strong>Address:</strong> Gulele 07 1378 St, Addis Ababa, Ethiopia</li>
+                <li><strong>Contact Number:</strong> 0940349840</li>
+                <li><strong>Mobile Phone:</strong> 0905048804</li>
+                <li><strong>Website:</strong> <a href="https://www.tiktok.com/@gebru.mahitem" target="_blank" rel="noopener noreferrer">www.tiktok.com/@gebru.mahitem</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Find Your Practice Area Section */}
+      {/* Office Info Section */}
       <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
         <div className="container">
           <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Find Your Solution</span>
-            <h2 className="heading-lg mb-4">Not Sure Which Practice Area You Need?</h2>
+            <span className="badge-law mb-2 inline-block">About Our Office</span>
+            <h2 className="heading-lg mb-4">Gebru Mahitem Law Office</h2>
             <p className="body-md max-w-2xl mx-auto">
-              Abate Yimer Law Office can help you identify the right legal services for your specific situation. Contact us for a
-              consultation to discuss your business and investment ventures in Ethiopia.
+              Located in Addis Ababa, we serve clients with a focus on integrity, expertise, and client satisfaction. Our office is committed to providing reliable and trustworthy legal services you can depend on.
             </p>
           </div>
-
-          <div className="max-w-3xl mx-auto">
-            <Card className="law-card">
-              <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row gap-6 items-center">
-                  <div className="rounded-full bg-law-beige-200 dark:bg-law-brown-800 p-4 flex items-center justify-center">
-                    <Search className="h-8 w-8 text-law-beige-500 dark:text-law-brown-500" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="heading-md mb-2 text-center md:text-left">Schedule a Consultation</h3>
-                    <p className="body-md mb-4 text-center md:text-left">
-                      Abate Yimer Law Office will help you navigate your legal challenges and identify the right
-                      practice area for your business and investment ventures in Ethiopia.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Button className="btn-law flex-1">WhatsApp Us</Button>
-                      <Button className="btn-law-outline flex-1">Call +251 911 992 719</Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-white dark:bg-law-brown-800 p-6 rounded-lg shadow-md">
+              <h3 className="heading-md mb-2">Company Description</h3>
+              <p className="body-md mb-4">
+                Gebru Mahitem is a professional and experienced lawyer offering a wide range of legal services to individuals and businesses. He is a dedicated attorney committed to providing personalized and effective legal solutions to meet clients' needs. With a focus on integrity, expertise, and client satisfaction, he strives to deliver exceptional legal representation and guidance. Whether you are facing a personal injury, criminal defense, family law, or business litigation matter, he is here to advocate for your rights and protect your best interests. You can trust that he will provide reliable and trustworthy legal services that you can depend on.
+              </p>
+              <ul className="body-md space-y-2">
+                <li><strong>Employees:</strong> 1-5</li>
+                <li><strong>Peers at other companies:</strong> Bereket Ayele, Mesay Tedla</li>
+              </ul>
+            </div>
+            <div className="bg-white dark:bg-law-brown-800 p-6 rounded-lg shadow-md">
+              <h3 className="heading-md mb-2">Quick Facts</h3>
+              <ul className="body-md space-y-2">
+                <li><strong>Total experience as Attorney and Consultant at Law:</strong> 2 years</li>
+                <li><strong>Minimum period of employment in companies:</strong> 9 years 5 months</li>
+                <li><strong>Average duration of employment:</strong> 9 years 5 months</li>
+                <li><strong>Positions held:</strong> Attorney At Law, Senior Lawyer</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Client Testimonials */}
+      {/* CTA Section */}
       <section className="section-padding relative">
         <div className="absolute inset-0">
           <Image
-            src={ethiopianImages.federalCourt}
-            alt="Ethiopian courthouse"
+            src={ethiopianImages.heroBackground}
+            alt="Ethiopian-themed background"
             fill
             className="object-cover opacity-10"
           />
         </div>
         <div className="absolute inset-0 bg-law-gradient dark:bg-law-gradient-dark opacity-90"></div>
         <div className="container relative z-10">
-          <div className="text-center mb-12">
-            <span className="badge-law mb-2 inline-block">Client Success</span>
-            <h2 className="heading-lg mb-4 text-white">What Our Clients Say</h2>
-            <p className="body-md max-w-2xl mx-auto text-law-beige-100">
-              Read about the experiences of clients we've helped across our practice areas.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="law-card bg-white/90 dark:bg-law-brown-900/90">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
-                    <Image
-                      src={ethiopianImages.client1}
-                      alt="Client Photo"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-brown-900 dark:text-law-beige-100">Tadesse Bekele</h4>
-                    <p className="text-sm text-law-brown-600 dark:text-law-beige-400">Ethiopian Corporate Client</p>
-                  </div>
-                </div>
-                <p className="body-md italic">
-                  "The corporate law team at Abate Yimer Law Office guided our company through a complex merger with precision and
-                  expertise. Their European trained corporate lawyers provided invaluable guidance in navigating regulatory challenges and ensuring a
-                  smooth transaction in Addis Ababa."
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card bg-white/90 dark:bg-law-brown-900/90">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
-                    <Image
-                      src={ethiopianImages.client2}
-                      alt="Client Photo"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-brown-900 dark:text-law-beige-100">Hiwot Mengistu</h4>
-                    <p className="text-sm text-law-brown-600 dark:text-law-beige-400">Ethiopian Real Estate Developer</p>
-                  </div>
-                </div>
-                <p className="body-md italic">
-                  "Working with the property rights team at Abate Yimer Law Office has been exceptional. Their thorough understanding
-                  of Ethiopian land lease regulations and international standard solutions helped us navigate complex property issues in Addis Ababa and
-                  complete our development project on schedule."
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="law-card bg-white/90 dark:bg-law-brown-900/90">
-              <CardContent className="pt-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-law-beige-200 dark:bg-law-brown-800 overflow-hidden relative mr-4">
-                    <Image
-                      src={ethiopianImages.client3}
-                      alt="Client Photo"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-law-brown-900 dark:text-law-beige-100">Solomon Girma</h4>
-                    <p className="text-sm text-law-brown-600 dark:text-law-beige-400">Ethiopian Technology Entrepreneur</p>
-                  </div>
-                </div>
-                <p className="body-md italic">
-                  "The intellectual property team at Abate Yimer Law Office has been instrumental in protecting our innovations in Ethiopia's emerging tech sector.
-                  Their international standard approach to patent and trademark applications under Ethiopian IP law has given our company a significant
-                  competitive advantage in the Ethiopian market."
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-law-beige-50 dark:bg-law-brown-900/50">
-        <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="badge-law mb-2 inline-block">Get Started</span>
-            <h2 className="heading-lg mb-6">Ready to Discuss Your Legal Needs?</h2>
-            <p className="body-lg mb-8">
-              Fiker Getachew And Associates Law Office (FGA) is ready to help you with our diversified areas of expertise.
-              We provide quality legal services with creative solutions for all your legal needs in Ethiopia.
-              Take the first step by contacting us today.
+            <h2 className="heading-lg mb-6 text-white">Ready to Work With Gebru Mahitem?</h2>
+            <p className="body-lg mb-8 text-law-beige-100">
+              Contact us today to schedule a consultation and discuss how we can help you navigate your legal challenges and achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="btn-law">Call +251 911 992 719</Button>
-              <Button className="btn-law-outline">WhatsApp Us</Button>
+              <Button className="btn-law bg-white text-law-brown-900 hover:bg-law-beige-100 dark:bg-law-beige-100 dark:text-law-brown-900 dark:hover:bg-law-beige-200">
+                <Phone className="mr-2 h-4 w-4" />
+                Schedule a Consultation
+              </Button>
+              <Button className="btn-law-outline border-white text-white hover:bg-white/10 dark:border-law-beige-100 dark:text-law-beige-100 dark:hover:bg-law-beige-100/10">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-law-brown-900 text-white py-4">
+        <div className="container text-center">
+          <p className="body-md mb-1">© 2025 Gebru Mahitem Law Office</p>
+          <p className="body-md mb-1">Gulele 07 1378 St, Addis Ababa, Ethiopia</p>
+          <p className="body-md mb-1">Contact: <a href="tel:0940349840" className="underline hover:text-law-beige-100">0940349840</a></p>
+          <p className="body-md">Follow us: <a href="https://www.tiktok.com/@gebru.mahitem" target="_blank" rel="noopener noreferrer" className="underline hover:text-law-beige-100">tiktok.com/@gebru.mahitem</a></p>
+        </div>
+      </footer>
     </>
   )
 }

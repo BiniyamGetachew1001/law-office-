@@ -29,6 +29,9 @@ export default function TermsOfServicePage() {
             "Website").
           </p>
           <p className="body-md mb-4">
+            These Terms of Service govern your access to and use of Gebru Mahitem Law Office's website and services.
+          </p>
+          <p className="body-md mb-4">
             Please read these Terms carefully before using our Website. By accessing or using our Website, you agree to
             be bound by these Terms. If you do not agree to these Terms, you must not access or use our Website.
           </p>
